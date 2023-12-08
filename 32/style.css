@@ -1,0 +1,101 @@
+*{
+    border: 0px;
+    margin: 0px;
+    color: white;
+   
+}
+.bottom{
+    background-color: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    
+}
+nav ul li{
+    margin: 10px;
+    margin-left: 30px;
+    display: inline-block;
+}
+nav ul{
+    margin-left: 60%;
+}
+.main1{
+    margin-top: 90px;
+    margin-left: 30px;
+    
+}
+.main1 h1{
+    font-size: 70px;
+}
+.main1 span{
+    background-image: linear-gradient(to right,rgb(73, 37, 172),rgb(198, 74, 202));
+    font-size: 30px;
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main1 p{
+    font-size: 30px;
+    
+}
+.main2{
+    display: flex;
+    align-items: center;
+    
+}
+.main2 p{
+    margin-top: 300px;
+}
+.main2 img{
+    
+    margin-left: 30px;
+    height: 300px;
+    border-radius: 30px;
+    margin-right: 40px;
+}
+.side2{
+    padding-right: 30px;
+}
+.side1{
+    align-items: center;
+}
+.side1 img{
+       padding-top: 90px;
+       border-radius: 500px;
+       padding-left: 90px;
+}
+.second_page{
+    display: flex;
+    color: black;
+    
+   
+}
+.second_page h3{
+    font-size: 30px;
+    padding-left: 20px;
+    color: black;
+    
+}
+.second_page p{
+    padding-top: 200px;
+    color: black;
+}
+.second_page img{
+    padding-top: 70px;
+    border-radius: 10px;
+}
+.side3 h3{
+    color: rgb(179, 64, 224);
+}
+.count{
+display: flex;
+padding-top: 30px;
+}
+.count h1,h4{
+    color: black;
+}
+.count1{
+    padding-left: 200px;
+    
+}
