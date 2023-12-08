@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+body{
+    background-color: black;
+}
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    
+}
+.left{
+    margin-left: 40px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+ul li a{
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: monospace;
+}
+li{
+    list-style-type: none;
+}
+ul li a:hover{
+    font-weight: bold;
+    
+}
+ul{
+    display: flex;
+    gap: 30px;
+    margin-right: 5px;
+}
+label{
+    font-size: 15px;
+    color: #fff;
+}
+#home{
+    margin-top: 75px;
+    margin-left: 110px;
+    height: 100vh;
+    background-color: black;
+    border-radius: 0 0 0 50px;
+}
+h1{
+    font-size: 80px;
+    color: #fff;
+}
+.home-2-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h2{
+    margin-top: -20px;
+    color: #fff;
+    text-align: start;
+    font-size: 35px;
+    font-family: manrope;
+    margin-bottom: 100px;
+}
+.spa{
+    margin-right: 40px;
+    color: #fff;
+    padding: 8px 50px;
+    border: none;
+    border-radius: 40px;
+    background: rgb(63,54,223);
+    background: linear-gradient(90deg, rgba(63,54,223,0.9724264705882353) 0%, rgba(113,57,233,0.9360119047619048) 47%, rgba(255,0,241,0.9164040616246498) 100%);
+}
+.GRID-IMG{
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+}
+.homew p{
+    font-size: 10px;
+    color: #fff;
+    font-family: 'inter';
+    padding: 0 40px;
+    width: 350px;
+    line-height: 16px;
+}
+.home2-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#about{
+    padding: 0 100px;
+    height: 100vh;
+    margin-top: -100px;
+    background-color: white;
+}
+.about h2{
+    padding-top: 200px;
+    font-size: 35px;
+    height: 100px;
+    width: 500px;
+    color: #0D0D0D;
+    margin-left: 100px;
+}
+.gshs{
+    color: black;
+    height: 400px;
+    width: 400px;
+}
+.bar{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.bars h5,h2{
+    color: black;
+}
