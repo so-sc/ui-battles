@@ -1,0 +1,84 @@
+:root{
+  --blackcolor--:#0D0D0D;
+  --buttonclr--:#3644DB, #D15BB2;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  background:var(--blackcolor--);
+  padding: 35px;
+
+}
+nav{
+  display:flex;
+  justify-content: space-between;
+}
+nav .logo{
+  width: 50px;
+  height: 50px;
+}
+nav span{
+  color:#fff;
+  font-family: "Manrope";
+  font-size: 24px;
+  font-weight: 800;
+  margin-left:-900px;
+  margin-bottom: 40px;
+}
+
+nav ul{
+  display:flex;
+}
+nav ul li{
+  list-style: none;
+  display:flex;
+  gap:50px;
+  padding:20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color:#fff;
+  font-family: "Manrope";
+  font-size: 18px;
+  font-weight: 400;
+}
+.container h1{
+  color: #fff;
+  font-family: "Manrope";
+  font-size: 100px;
+  font-weight: 600;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+.container span{
+  color: #FFF;
+  font-family: "Manrope";
+  font-size: 54px;
+  font-weight: 600;
+}
+#btn{
+  background:linear-gradient(#3644DB, #D15BB2);
+  display: inline-flex;
+  padding: 15px 100px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius:100px;
+  color:#fff;
+  font-family: "Manrope";
+  font-size:25px;
+  font-weight: 400;
+}
+.left{
+  color: #FFF;
+   margin-right:100px;
+   font-family: "Inter";
+   font-size: 18px;
+   font-weight: 400;
+   padding: 23px;
+}
