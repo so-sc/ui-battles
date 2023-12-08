@@ -1,0 +1,3606 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Homepage</title>
+  <style>
+    /* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhduz8A.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxduz8A.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmxduz8A.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlBduz8A.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmBduz8A.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmRduz8A.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7SUc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7SUc.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7SUc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7SUc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7SUc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7SUc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7SUc.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7SUc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7SUc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7SUc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 192rem;
+}.homepage-Wjo {
+  background-color: #0c0c0c;
+  width: 100%;
+  height: 1755.6rem;
+  overflow: hidden;
+  position: relative;
+
+  .component-1-X97 {
+    width: 247.15rem;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .auto-group-dkkh-Wv9 {
+      width: 100%;
+      height: 538.9rem;
+      position: relative;
+      flex-shrink: 0;
+
+      .rectangle-7-nsf {
+        height: 43.8rem;
+        position: absolute;
+        left: 148rem;
+        top: 80.9rem;
+        background-color: #ffffff;
+        width: 44.5rem;
+      }
+      .rectangle-6-tvh {
+        top: 0;
+        background-color: #0c0c0c;
+        border-radius: 0 0 30rem 0;
+        width: 192rem;
+        height: 124.7rem;
+        position: absolute;
+        left: 0.5rem;
+      }
+      .vector-6-Q8M {
+        width: 247.15rem;
+        height: 107.0497rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        object-fit: contain;
+        vertical-align: top;
+      }
+      .make-follower-wPB {
+        font-family: Manrope, 'Source Sans Pro';
+        white-space: nowrap;
+        width: 132.6rem;
+        left: 16.7rem;
+        top: 25.7rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ffffff;
+        height: 21.9rem;
+        position: absolute;
+        font-size: 16rem;
+        line-height: 1.365;
+      }
+      .frame-157-LgD {
+        top: 8rem;
+        display: flex;
+        align-items: center;
+        width: 159.6rem;
+        height: 6.4rem;
+        position: absolute;
+        left: 16.7rem;
+
+        .frame-155-34q {
+          flex-shrink: 0;
+          margin-right: 103.3rem;
+          height: 100%;
+          display: flex;
+          align-items: center;
+
+          .g20-YnH {
+            object-fit: contain;
+            vertical-align: top;
+            flex-shrink: 0;
+            margin-right: 2rem;
+            width: 6.4rem;
+            height: 6.4rem;
+          }
+          .lacy-tLM {
+            color: #ffffff;
+            flex-shrink: 0;
+            font-weight: 800;
+            line-height: 1.365;
+            text-transform: uppercase;
+            font-family: Manrope, 'Source Sans Pro';
+            white-space: nowrap;
+            margin-bottom: 0.0001rem;
+            font-size: 2.4rem;
+          }
+        }
+        .frame-7-R7K {
+          display: flex;
+          column-gap: 5rem;
+          align-items: center;
+          flex-shrink: 0;
+          margin: 1.95rem 0rem 1.95rem 0rem;
+          height: calc(100% - 3.9rem);
+
+          .home-KiV {
+            font-weight: 800;
+            line-height: 1.365;
+            color: #ffffff;
+            font-family: Manrope, 'Source Sans Pro';
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-size: 1.8rem;
+          }
+          .about-us-3Pb {
+            line-height: 1.365;
+            color: #ffffff;
+            font-family: Manrope, 'Source Sans Pro';
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-size: 1.8rem;
+            font-weight: 400;
+          }
+          .page-MfB {
+            flex-shrink: 0;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 1.365;
+            color: #ffffff;
+            font-family: Manrope, 'Source Sans Pro';
+            white-space: nowrap;
+          }
+          .contact-us-Uzh {
+            font-weight: 400;
+            line-height: 1.365;
+            color: #ffffff;
+            font-family: Manrope, 'Source Sans Pro';
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-size: 1.8rem;
+          }
+        }
+      }
+      .rectangle-5-cr1 {
+        border-radius: 30rem 0 0 0;
+        width: 192rem;
+        height: 279.7rem;
+        position: absolute;
+        left: 0.5rem;
+        top: 124.7rem;
+        background-color: #ffffff;
+      }
+      .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-iu3 {
+        height: 11rem;
+        position: absolute;
+        font-size: 1.8rem;
+        font-weight: 400;
+        width: 56.5rem;
+        left: 119.4rem;
+        top: 78.3rem;
+        line-height: 1.2125;
+        color: #ffffff;
+        font-family: Inter, 'Source Sans Pro';
+      }
+      .frame-18-7gH {
+        width: 159.6rem;
+        height: 19.3rem;
+        position: absolute;
+        left: 16.7rem;
+        top: 320rem;
+        display: flex;
+        align-items: center;
+
+        .frame-14-SCm {
+          margin-right: 24.1667rem;
+          height: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+
+          .project-done-nXX {
+            text-transform: capitalize;
+            color: #0c0c0c;
+            font-family: Manrope, 'Source Sans Pro';
+            white-space: nowrap;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            line-height: 1.365;
+            flex-shrink: 0;
+            font-size: 3.2rem;
+          }
+          .item-220-s3B {
+            font-weight: 800;
+            line-height: 1.365;
+            text-transform: capitalize;
+            color: #0c0c0c;
+            font-family: Manrope, 'Source Sans Pro';
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-size: 9.4rem;
+          }
+        }
+        .frame-15-yc1 {
+          height: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          margin-right: 24.1667rem;
+
+          .our-team-XtR {
+            font-size: 3.2rem;
+            line-height: 1.365;
+            flex-shrink: 0;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: #0c0c0c;
+            font-family: Manrope, 'Source Sans Pro';
+            white-space: nowrap;
+          }
+          .item-110-DmF {
+            line-height: 1.365;
+            text-transform: capitalize;
+            color: #0c0c0c;
+            font-family: Manrope, 'Source Sans Pro';
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-size: 9.4rem;
+            font-weight: 800;
+          }
+        }
+        .frame-16-MsT {
+          flex-shrink: 0;
+          margin-right: 24.1667rem;
+          height: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+
+          .reviewed-hRX {
+            margin-bottom: 2rem;
+            font-weight: 500;
+            font-family: Manrope, 'Source Sans Pro';
+            flex-shrink: 0;
+            font-size: 3.2rem;
+            line-height: 1.365;
+            text-transform: capitalize;
+            color: #0c0c0c;
+            white-space: nowrap;
+          }
+          .item-135-ERT {
+            flex-shrink: 0;
+            font-size: 9.4rem;
+            font-weight: 800;
+            line-height: 1.365;
+            text-transform: capitalize;
+            color: #0c0c0c;
+            font-family: Manrope, 'Source Sans Pro';
+            white-space: nowrap;
+          }
+        }
+        .frame-17-Aa1 {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          height: 100%;
+
+          .happy-client-W85 {
+            margin-bottom: 2rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            font-family: Manrope, 'Source Sans Pro';
+            font-size: 3.2rem;
+            line-height: 1.365;
+            color: #0c0c0c;
+            white-space: nowrap;
+            flex-shrink: 0;
+          }
+          .item-330-diV {
+            flex-shrink: 0;
+            font-size: 9.4rem;
+            font-weight: 800;
+            line-height: 1.365;
+            text-transform: capitalize;
+            color: #0c0c0c;
+            font-family: Manrope, 'Source Sans Pro';
+            white-space: nowrap;
+          }
+        }
+      }
+      .group-4-y1f {
+        object-fit: contain;
+        vertical-align: top;
+        width: 26.6rem;
+        height: 26.6rem;
+        position: absolute;
+        left: 137.3rem;
+        top: 111.4rem;
+      }
+      .frame-6-uAD {
+        border-radius: 10rem;
+        left: 17.6rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ffffff;
+        background: linear-gradient(294.44deg, #3644db 93.44%, #d15bb2 216.73%);
+        width: 63.7rem;
+        font-size: 6.4rem;
+        display: flex;
+        position: absolute;
+        top: 50.6rem;
+        white-space: nowrap;
+        align-items: center;
+        height: 11.7rem;
+        line-height: 1.365;
+        font-family: Manrope, 'Source Sans Pro';
+        justify-content: center;
+      }
+      .with-social-media-6kV {
+        height: 8.8rem;
+        position: absolute;
+        left: 86.3rem;
+        top: 52.1rem;
+        font-weight: 800;
+        line-height: 1.365;
+        font-family: Manrope, 'Source Sans Pro';
+        width: 62.7rem;
+        font-size: 6.4rem;
+        text-transform: uppercase;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+      .mask-group-CHj {
+        height: 63.3rem;
+        position: absolute;
+        left: 16.7rem;
+        top: 78.3rem;
+        object-fit: contain;
+        vertical-align: top;
+        width: 92.6rem;
+      }
+      .group-30-VGq {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        width: 160.05rem;
+        height: 138.4rem;
+        position: absolute;
+        left: 16.45rem;
+        top: 161.6rem;
+
+        .auto-group-egw5-Did {
+          flex-shrink: 0;
+          margin: 0rem 0rem 9.9rem 0.25rem;
+          width: calc(100% - 0.25rem);
+          display: flex;
+          align-items: flex-start;
+
+          .we-are-the-best-solution-for-your-social-media-Yku {
+            margin-right: 45.8rem;
+            max-width: 80.4rem;
+            text-transform: capitalize;
+            flex-shrink: 0;
+            font-size: 6.4rem;
+            font-weight: 800;
+            line-height: 1.365;
+            color: #0c0c0c;
+            font-family: Manrope, 'Source Sans Pro';
+          }
+          .about-us-FvD {
+            line-height: 1.365;
+            text-transform: capitalize;
+            font-family: Manrope, 'Source Sans Pro';
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-size: 6.4rem;
+            font-weight: 800;
+          }
+        }
+        .auto-group-bpbu-18h {
+          margin-right: 0.2rem;
+          width: 159.85rem;
+          height: 111rem;
+          position: relative;
+          flex-shrink: 0;
+
+          .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-kMB {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #0c0c0c;
+            font-family: Inter, 'Source Sans Pro';
+            width: 55.8rem;
+            position: absolute;
+            left: 0;
+            top: 42.5rem;
+            height: 11rem;
+            text-align: center;
+            line-height: 1.2125;
+          }
+          .group-24-iSR {
+            position: absolute;
+            left: 53.95rem;
+            top: 0;
+            width: 105.9rem;
+            height: 111rem;
+
+            .mask-group-Qq3 {
+              position: absolute;
+              left: 21.3rem;
+              top: 0;
+              object-fit: contain;
+              vertical-align: top;
+              width: 84.6rem;
+              height: 93rem;
+            }
+            .group-7-jsK {
+              left: 0;
+              top: 68.5rem;
+              object-fit: contain;
+              vertical-align: top;
+              width: 42.5rem;
+              height: 42.5rem;
+              position: absolute;
+            }
+          }
+        }
+      }
+      .frame-145-gGm {
+        width: 192rem;
+        left: 0.5rem;
+        top: 364.2rem;
+        background-color: #0c0c0c;
+        border-radius: 30rem 30rem 0 0;
+        box-sizing: border-box;
+        padding: 20rem 16.2rem 25.05rem 16.2rem;
+        height: 174.7rem;
+        position: absolute;
+
+        .frame-144-knR {
+          height: 100%;
+          row-gap: 15rem;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          .why-choose-us-UiR {
+            flex-shrink: 0;
+            font-size: 12rem;
+            font-weight: 800;
+            line-height: 1.365;
+            color: #ffffff;
+            font-family: Manrope, 'Source Sans Pro';
+            margin-left: 0.1rem;
+            text-transform: capitalize;
+            white-space: nowrap;
+          }
+          .frame-141-okh {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            margin-right: 47.6rem;
+            width: calc(100% - 47.6rem);
+            height: 22.75rem;
+
+            .frame-153-9pZ {
+              margin-right: 13rem;
+              width: 20rem;
+              height: 20rem;
+              object-fit: contain;
+              vertical-align: top;
+              border-radius: 5rem;
+              flex-shrink: 0;
+            }
+            .group-44-SYm {
+              flex-shrink: 0;
+              width: 79rem;
+              height: 100%;
+
+              .quickly-services-aus {
+                margin-bottom: 2.95rem;
+                font-size: 6.4rem;
+                font-weight: 800;
+                line-height: 1.365;
+                text-transform: capitalize;
+                color: #ffffff;
+                font-family: Manrope, 'Source Sans Pro';
+                white-space: nowrap;
+              }
+              .frame-138-uSM {
+                padding-left: 0.5333rem;
+                width: calc(100% - 10.2rem);
+                display: flex;
+                align-items: center;
+                margin-left: 10.2rem;
+                box-sizing: border-box;
+
+                .ticket-star-yh7 {
+                  margin-right: 6.4333rem;
+                  width: 5.3333rem;
+                  height: 4.8rem;
+                  object-fit: contain;
+                  vertical-align: top;
+                  flex-shrink: 0;
+                }
+                .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-tZB {
+                  max-width: 56.5rem;
+                  font-size: 1.8rem;
+                  font-weight: 400;
+                  line-height: 1.2125;
+                  color: #ffffff;
+                  font-family: Inter, 'Source Sans Pro';
+                  flex-shrink: 0;
+                }
+              }
+            }
+          }
+          .frame-142-fyF {
+            margin-left: 47.5rem;
+            width: calc(100% - 47.5rem);
+            height: 22.75rem;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+
+            .group-44-DUy {
+              margin-right: 13.1rem;
+              width: 79rem;
+              height: 100%;
+              flex-shrink: 0;
+
+              .professional-team-yDF {
+                line-height: 1.365;
+                text-transform: capitalize;
+                color: #ffffff;
+                font-family: Manrope, 'Source Sans Pro';
+                white-space: nowrap;
+                margin-bottom: 2.95rem;
+                font-size: 6.4rem;
+                font-weight: 800;
+              }
+              .frame-138-WU5 {
+                display: flex;
+                align-items: center;
+                margin-left: 10.2rem;
+                box-sizing: border-box;
+                padding-left: 0.5333rem;
+                width: calc(100% - 10.2rem);
+
+                .ticket-star-pDs {
+                  margin-right: 6.4333rem;
+                  width: 5.3333rem;
+                  height: 4.8rem;
+                  object-fit: contain;
+                  vertical-align: top;
+                  flex-shrink: 0;
+                }
+                .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-ZSM {
+                  color: #ffffff;
+                  font-family: Inter, 'Source Sans Pro';
+                  flex-shrink: 0;
+                  max-width: 56.5rem;
+                  font-size: 1.8rem;
+                  font-weight: 400;
+                  line-height: 1.2125;
+                }
+              }
+            }
+            .frame-153-zGm {
+              border-radius: 5rem;
+              flex-shrink: 0;
+              width: 20rem;
+              height: 20rem;
+              object-fit: contain;
+              vertical-align: top;
+            }
+          }
+          .frame-143-vw7 {
+            margin-right: 47.6rem;
+            width: calc(100% - 47.6rem);
+            height: 22.75rem;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+
+            .frame-153-USq {
+              width: 20rem;
+              height: 20rem;
+              object-fit: contain;
+              vertical-align: top;
+              border-radius: 5rem;
+              flex-shrink: 0;
+              margin-right: 13rem;
+            }
+            .group-44-wbK {
+              width: 79rem;
+              height: 100%;
+              flex-shrink: 0;
+
+              .guranted-services-Jgm {
+                text-transform: capitalize;
+                color: #ffffff;
+                font-family: Manrope, 'Source Sans Pro';
+                white-space: nowrap;
+                margin-bottom: 2.95rem;
+                font-size: 6.4rem;
+                font-weight: 800;
+                line-height: 1.365;
+              }
+              .frame-138-RFb {
+                padding-left: 0.5333rem;
+                width: calc(100% - 10.2rem);
+                display: flex;
+                align-items: center;
+                margin-left: 10.2rem;
+                box-sizing: border-box;
+
+                .ticket-star-Muw {
+                  margin-right: 6.4333rem;
+                  width: 5.3333rem;
+                  height: 4.8rem;
+                  object-fit: contain;
+                  vertical-align: top;
+                  flex-shrink: 0;
+                }
+                .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-WH3 {
+                  font-weight: 400;
+                  line-height: 1.2125;
+                  color: #ffffff;
+                  font-family: Inter, 'Source Sans Pro';
+                  flex-shrink: 0;
+                  max-width: 56.5rem;
+                  font-size: 1.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .auto-group-gkno-UNH {
+      padding: 0rem 31.05rem 0rem 24.1rem;
+      width: 100%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      box-sizing: border-box;
+
+      .promotion-QFw {
+        width: 100%;
+        height: 64.2rem;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(319.06deg, #3644db 114.86%, #d15bb2 204.38%);
+        flex-shrink: 0;
+
+        .vector-6-MBB {
+          object-fit: contain;
+          vertical-align: top;
+          width: 222.4rem;
+          height: 119.4924rem;
+          position: absolute;
+          left: -0.5rem;
+          top: -39.5rem;
+        }
+        .frame-46-gjF {
+          height: 40.4rem;
+          position: absolute;
+          left: 39.65rem;
+          top: 11.9rem;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          width: 112.7rem;
+
+          .make-your-business-known-to-people-with-us-bLR {
+            text-align: center;
+            line-height: 1.365;
+            font-weight: 800;
+            text-transform: capitalize;
+            color: #ffffff;
+            font-family: Manrope, 'Source Sans Pro';
+            flex-shrink: 0;
+            margin-bottom: 8rem;
+            max-width: 112.7rem;
+            font-size: 8.4rem;
+          }
+          .frame-10-Vwb {
+            flex-shrink: 0;
+            margin: 0 36.9rem;
+            box-sizing: border-box;
+            padding: 2.3rem 3rem 2.3rem 7.5rem;
+            width: calc(100% - 73.8rem);
+            height: 9.4rem;
+            background-color: #ffffff;
+            border-radius: 20rem;
+
+            .frame-4-nvh {
+              padding: 0.2rem 0.523rem 0.2rem 0rem;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              box-sizing: border-box;
+
+              .lets-discuss-8Um {
+                margin-right: 3.6rem;
+                font-weight: 800;
+                line-height: 1.365;
+                text-transform: capitalize;
+                font-family: Manrope, 'Source Sans Pro';
+                white-space: nowrap;
+                font-size: 3.2rem;
+                color: #0c0c0c;
+                flex-shrink: 0;
+              }
+              .arrow-right-3-dRX {
+                object-fit: contain;
+                vertical-align: top;
+                flex-shrink: 0;
+                margin-top: 0.3004rem;
+                width: 3.6774rem;
+                height: 2.3004rem;
+              }
+            }
+          }
+        }
+      }
+      .auto-group-b1qo-VTj {
+        height: 1152.5rem;
+        position: relative;
+        flex-shrink: 0;
+        width: 100%;
+
+        .footer-3EM {
+          box-sizing: border-box;
+          width: 192rem;
+          left: 0;
+          background-repeat: no-repeat;
+          background-image: url('REPLACE_IMAGE:I1:7;1:1270');
+          padding: 34.2rem 16.2rem 6.5rem 16.2rem;
+          height: 73.4rem;
+          position: absolute;
+          top: 1079.1rem;
+          background-size: cover;
+          background-position: center;
+
+          .frame-115-AJy {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            .frame-113-VMF {
+              display: flex;
+              align-items: flex-start;
+              flex-shrink: 0;
+              margin-bottom: 4.5rem;
+              width: 100%;
+              height: 21.1rem;
+
+              .frame-112-YaR {
+                margin: 0rem 23.467rem 0rem 0rem;
+                width: 34.4rem;
+                flex-shrink: 0;
+
+                .frame-155-rr1 {
+                  margin: 0rem 12.5rem 3rem 0rem;
+                  width: calc(100% - 12.5rem);
+                  display: flex;
+                  align-items: center;
+
+                  .g20-oWM {
+                    margin-right: 2rem;
+                    width: 8.4rem;
+                    height: 8.4001rem;
+                    object-fit: contain;
+                    vertical-align: top;
+                    flex-shrink: 0;
+                  }
+                  .lacy-Yyj {
+                    font-weight: 800;
+                    line-height: 1.365;
+                    text-transform: uppercase;
+                    font-family: Manrope, 'Source Sans Pro';
+                    white-space: nowrap;
+                    margin-top: 0.0999rem;
+                    color: #0c0c0c;
+                    flex-shrink: 0;
+                    font-size: 4.4rem;
+                  }
+                }
+                .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-foT {
+                  font-weight: 400;
+                  line-height: 1.2125;
+                  color: #000000;
+                  font-family: Inter, 'Source Sans Pro';
+                  max-width: 34.4rem;
+                  font-size: 1.8rem;
+                }
+              }
+              .frame-109-xnZ {
+                flex-shrink: 0;
+                width: 10.4rem;
+                height: 100%;
+
+                .page-j2d {
+                  margin-bottom: 3rem;
+                  font-size: 2.4rem;
+                  font-weight: 800;
+                  line-height: 1.365;
+                  text-transform: capitalize;
+                  color: #0c0c0c;
+                  font-family: Manrope, 'Source Sans Pro';
+                  white-space: nowrap;
+                }
+                .frame-110-Sxd {
+                  row-gap: 2rem;
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%;
+
+                  .project-oYH {
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    line-height: 1.2125;
+                    color: #0c0c0c;
+                    font-family: Inter, 'Source Sans Pro';
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                  }
+                  .news-xAH {
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    line-height: 1.2125;
+                    color: #0c0c0c;
+                    font-family: Inter, 'Source Sans Pro';
+                  }
+                  .news-detail-6XP {
+                    font-weight: 600;
+                    line-height: 1.2125;
+                    color: #0c0c0c;
+                    font-family: Inter, 'Source Sans Pro';
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    font-size: 1.8rem;
+                  }
+                  .faq-qjs {
+                    font-family: Inter, 'Source Sans Pro';
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    line-height: 1.2125;
+                    color: #0c0c0c;
+                  }
+                }
+              }
+              .auto-group-ztd1-yLH {
+                height: 100%;
+                display: flex;
+                align-items: flex-start;
+                flex-shrink: 0;
+                box-sizing: border-box;
+                padding-left: 23.5667rem;
+
+                .frame-110-vWR {
+                  margin-right: 23.5667rem;
+                  width: 12.2rem;
+                  flex-shrink: 0;
+
+                  .links-UH3 {
+                    margin-bottom: 3rem;
+                    font-size: 2.4rem;
+                    font-weight: 800;
+                    line-height: 1.365;
+                    text-transform: capitalize;
+                    color: #0c0c0c;
+                    font-family: Manrope, 'Source Sans Pro';
+                    white-space: nowrap;
+                  }
+                  .frame-110-1nm {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    .term-of-use-yDo {
+                      margin-bottom: 2rem;
+                      font-size: 1.8rem;
+                      font-weight: 600;
+                      line-height: 1.2125;
+                      color: #0c0c0c;
+                      font-family: Inter, 'Source Sans Pro';
+                      white-space: nowrap;
+                      flex-shrink: 0;
+                    }
+                    .privacy-policy-h9o {
+                      font-size: 1.8rem;
+                      font-weight: 600;
+                      line-height: 1.2125;
+                      color: #0c0c0c;
+                      font-family: Inter, 'Source Sans Pro';
+                      white-space: nowrap;
+                      flex-shrink: 0;
+                    }
+                  }
+                }
+                .frame-84-Qpu {
+                  width: 32rem;
+                  flex-shrink: 0;
+
+                  .contact-us-m9f {
+                    font-family: Manrope, 'Source Sans Pro';
+                    white-space: nowrap;
+                    margin-bottom: 3rem;
+                    font-size: 2.4rem;
+                    font-weight: 800;
+                    line-height: 1.365;
+                    text-transform: capitalize;
+                    color: #0c0c0c;
+                  }
+                  .frame-83-JfP {
+                    width: 100%;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+
+                    .auto-group-hirw-sCh {
+                      display: flex;
+                      flex-direction: column;
+                      flex-shrink: 0;
+                      box-sizing: border-box;
+                      padding-bottom: 2rem;
+                      width: 100%;
+
+                      .frame-82-RED {
+                        align-items: center;
+                        flex-shrink: 0;
+                        margin: 0rem 9.7rem 2rem 0rem;
+                        box-sizing: border-box;
+                        padding: 0.267rem 0rem 0.2rem 0.267rem;
+                        width: calc(100% - 9.7rem);
+                        display: flex;
+
+                        .call-VE5 {
+                          vertical-align: top;
+                          flex-shrink: 0;
+                          margin-right: 2.1999rem;
+                          width: 2.7334rem;
+                          height: 2.7334rem;
+                          object-fit: contain;
+                        }
+                        .item-11-2174-8721-7322-p1T {
+                          font-size: 1.8rem;
+                          font-weight: 600;
+                          line-height: 1.2125;
+                          color: #0c0c0c;
+                          font-family: Inter, 'Source Sans Pro';
+                          white-space: nowrap;
+                          flex-shrink: 0;
+                          margin-bottom: 0.0666rem;
+                        }
+                      }
+                      .frame-81-8H3 {
+                        margin-right: 4.3rem;
+                        box-sizing: border-box;
+                        padding: 0.267rem 0rem 0.333rem 0.133rem;
+                        width: calc(100% - 4.3rem);
+                        display: flex;
+                        align-items: center;
+                        flex-shrink: 0;
+
+                        .message-emB {
+                          margin-right: 2.2rem;
+                          width: 2.8667rem;
+                          height: 2.6rem;
+                          object-fit: contain;
+                          vertical-align: top;
+                          flex-shrink: 0;
+                        }
+                        .lacyagencydomaincom-Pim {
+                          font-weight: 600;
+                          line-height: 1.2125;
+                          color: #0c0c0c;
+                          font-family: Inter, 'Source Sans Pro';
+                          white-space: nowrap;
+                          flex-shrink: 0;
+                          margin-top: 0.0666rem;
+                          font-size: 1.8rem;
+                        }
+                      }
+                    }
+                    .frame-80-78y {
+                      box-sizing: border-box;
+                      padding: 0.267rem 0rem 0.333rem 0.533rem;
+                      width: 100%;
+                      display: flex;
+                      align-items: center;
+                      flex-shrink: 0;
+
+                      .location-r6Z {
+                        width: 2.2rem;
+                        height: 2.6rem;
+                        object-fit: contain;
+                        vertical-align: top;
+                        flex-shrink: 0;
+                        margin-right: 2.4667rem;
+                      }
+                      .one-tower-3211la-california-xfP {
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        line-height: 1.2125;
+                        color: #0c0c0c;
+                        font-family: Inter, 'Source Sans Pro';
+                        white-space: nowrap;
+                        flex-shrink: 0;
+                        margin-top: 0.0666rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .vector-12-fph {
+              height: 0.2rem;
+              object-fit: contain;
+              vertical-align: top;
+              flex-shrink: 0;
+              margin: 0rem 0rem 4.5rem 0rem;
+              width: 159.6rem;
+            }
+            .frame-114-CZj {
+              align-items: center;
+              flex-shrink: 0;
+              width: 100%;
+              height: 2.4rem;
+              display: flex;
+
+              .frame-108-ZQH {
+                margin-right: 108.5rem;
+                box-sizing: border-box;
+                padding-right: 0.0991rem;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+
+                .akar-icons-facebook-fill-thT {
+                  margin-right: 2.1rem;
+                  width: 2.4rem;
+                  height: 2.4rem;
+                  object-fit: contain;
+                  vertical-align: top;
+                  flex-shrink: 0;
+                }
+                .akar-icons-linkedin-box-fill-1n5 {
+                  flex-shrink: 0;
+                  margin: 0rem 2.194rem 0rem 0rem;
+                  width: 2.2rem;
+                  height: 2.2rem;
+                  object-fit: contain;
+                  vertical-align: top;
+                }
+                .akar-icons-twitter-fill-igV {
+                  margin: 0rem 2.135rem 0.005rem 0rem;
+                  width: 2.2706rem;
+                  height: 1.8459rem;
+                  object-fit: contain;
+                  vertical-align: top;
+                  flex-shrink: 0;
+                }
+                .ant-design-instagram-filled-ztu {
+                  width: 2.2019rem;
+                  height: 2.2019rem;
+                  object-fit: contain;
+                  vertical-align: top;
+                  flex-shrink: 0;
+                  margin-bottom: 0rem;
+                }
+              }
+              .copyright-2022-lacy-all-right-reserved-wJM {
+                font-weight: 400;
+                line-height: 1.2125;
+                color: #000000;
+                font-family: Inter, 'Source Sans Pro';
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-size: 1.8rem;
+              }
+            }
+          }
+        }
+        .group-1-npm {
+          left: 0;
+          top: 196.1rem;
+          align-items: flex-end;
+          display: flex;
+          flex-direction: column;
+          width: 192rem;
+          height: 331rem;
+          position: absolute;
+
+          .rectangle-12-Vz5 {
+            width: 80.8rem;
+            height: 45.8rem;
+            background-color: #ffffff;
+            border-radius: 30rem 0 0 0;
+            flex-shrink: 0;
+          }
+          .auto-group-6mgw-3Eu {
+            box-sizing: border-box;
+            padding: 25rem 16.2rem;
+            width: 100%;
+            height: 285.2rem;
+            background-color: #ffffff;
+            border-radius: 30rem 0 0 0;
+            flex-shrink: 0;
+
+            .group-32-nCV {
+              width: 100%;
+              height: 201.2rem;
+              display: flex;
+              flex-direction: column;
+
+              .frame-2-Ljo {
+                margin-bottom: 9.9rem;
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+
+                .project-haM {
+                  flex-shrink: 0;
+                  margin-bottom: 2.4rem;
+                  font-size: 6.4rem;
+                  font-weight: 800;
+                  line-height: 1.365;
+                  text-transform: capitalize;
+                  font-family: Manrope, 'Source Sans Pro';
+                  white-space: nowrap;
+                }
+                .discover-and-see-some-of-our-projects-done-Dob {
+                  font-family: Manrope, 'Source Sans Pro';
+                  flex-shrink: 0;
+                  max-width: 141.7rem;
+                  font-size: 11rem;
+                  font-weight: 800;
+                  line-height: 1.365;
+                  text-transform: capitalize;
+                  color: #0c0c0c;
+                }
+              }
+              .auto-group-j6ur-9SM {
+                width: 100%;
+                height: 150rem;
+                position: relative;
+                flex-shrink: 0;
+
+                .group-12-Vm7 {
+                  object-fit: contain;
+                  vertical-align: top;
+                  width: 42.5rem;
+                  height: 42.5rem;
+                  position: absolute;
+                  left: 117.1rem;
+                  top: 107rem;
+                }
+                .group-25-Eih {
+                  height: 150rem;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  align-items: center;
+                  display: flex;
+                  flex-direction: column;
+                  width: 159.6rem;
+
+                  .auto-group-jqmd-nVK {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-shrink: 0;
+
+                    .mask-group-kBF {
+                      margin-right: 53.2rem;
+                      width: 53.2rem;
+                      height: 50rem;
+                      position: relative;
+                      object-fit: contain;
+                      vertical-align: top;
+                      flex-shrink: 0;
+                    }
+                    .mask-group-G9b {
+                      vertical-align: top;
+                      flex-shrink: 0;
+                      width: 53.2rem;
+                      height: 50rem;
+                      position: relative;
+                      object-fit: contain;
+                    }
+                  }
+                  .auto-group-mifu-DKj {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    flex-shrink: 0;
+                    width: 100%;
+
+                    .auto-group-tnxm-wFj {
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-image: url('REPLACE_IMAGE:1:49');
+                      flex-shrink: 0;
+                      margin: 0 53.2rem;
+                      width: calc(100% - 106.4rem);
+                      height: 50rem;
+                      background-size: cover;
+
+                      .frame-140-gUD {
+                        line-height: 1.365;
+                        text-transform: capitalize;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        color: #ffffff;
+                        white-space: nowrap;
+                        border-radius: 3rem;
+                        font-family: Manrope, 'Source Sans Pro';
+                        display: flex;
+                        height: 100%;
+                        font-size: 4.4rem;
+                        font-weight: 800;
+                        background: linear-gradient(2.43deg, #4c4c4c 145.85%, rgba(12, 12, 12, 0.400000006) 255.44%);
+                      }
+                    }
+                    .mask-group-Hyo {
+                      object-fit: contain;
+                      vertical-align: top;
+                      flex-shrink: 0;
+                      margin-right: 106.4rem;
+                      width: 53.2rem;
+                      height: 50rem;
+                      position: relative;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .group-3-nff {
+          top: 0;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          background-color: #0c0c0c;
+          border-radius: 0 0 30rem 0;
+          padding: 25rem 0rem 13.9rem 0rem;
+          position: absolute;
+          height: 241.9rem;
+          left: 0;
+          box-sizing: border-box;
+          width: 192rem;
+
+          .group-31-uEV {
+            flex-direction: column;
+            flex-shrink: 0;
+            margin: 0rem 0rem 15rem 0rem;
+            width: calc(100% - 0rem);
+            align-items: center;
+            display: flex;
+
+            .frame-3-cub {
+              margin: 0rem 19.9rem 7.9rem 20rem;
+              width: calc(100% - 39.9rem);
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+
+              .services-ZK3 {
+                line-height: 1.365;
+                text-transform: capitalize;
+                font-family: Manrope, 'Source Sans Pro';
+                white-space: nowrap;
+                flex-shrink: 0;
+                margin-bottom: 2.4rem;
+                font-size: 6.4rem;
+                font-weight: 800;
+              }
+              .our-professional-services-52V {
+                color: #ffffff;
+                font-family: Manrope, 'Source Sans Pro';
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-size: 12rem;
+                font-weight: 800;
+                line-height: 1.365;
+                text-transform: capitalize;
+              }
+            }
+            .vector-1-cHK {
+              width: 192rem;
+              height: 0;
+              object-fit: contain;
+              vertical-align: top;
+              flex-shrink: 0;
+              margin-bottom: 63rem;
+            }
+            .auto-group-jkex-92M {
+              margin: 0rem 30.3rem 0rem 18.673rem;
+              width: calc(100% - 48.973rem);
+              height: 63rem;
+              display: flex;
+              align-items: center;
+              flex-shrink: 0;
+
+              .asset-95-4f7 {
+                vertical-align: top;
+                flex-shrink: 0;
+                margin: 0rem 16.836rem 0.265rem 0rem;
+                width: 43.291rem;
+                height: 29.335rem;
+                object-fit: contain;
+              }
+              .vector-2-mpR {
+                flex-shrink: 0;
+                margin-right: 9.8rem;
+                width: 0;
+                height: 63rem;
+                object-fit: contain;
+                vertical-align: top;
+              }
+              .auto-group-pqab-L6q {
+                margin: 19.1rem 0rem 18.5rem 0rem;
+                width: 73.1rem;
+                height: calc(100% - 37.6rem);
+                flex-shrink: 0;
+
+                .social-media-marketing-q3b {
+                  font-weight: 800;
+                  line-height: 1.365;
+                  text-transform: capitalize;
+                  color: #ffffff;
+                  font-family: Manrope, 'Source Sans Pro';
+                  white-space: nowrap;
+                  margin-bottom: 5.6rem;
+                  font-size: 6.4rem;
+                }
+                .frame-136-j8y {
+                  margin-right: 4.3rem;
+                  box-sizing: border-box;
+                  padding-left: 0.5333rem;
+                  width: calc(100% - 4.3rem);
+                  display: flex;
+                  align-items: center;
+
+                  .arrow-left-circle-Tqf {
+                    flex-shrink: 0;
+                    margin: 0rem 6.433rem 0rem 0rem;
+                    width: 5.3333rem;
+                    height: 5.3333rem;
+                    object-fit: contain;
+                    vertical-align: top;
+                  }
+                  .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-zah {
+                    font-family: Inter, 'Source Sans Pro';
+                    flex-shrink: 0;
+                    max-width: 56.5rem;
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    line-height: 1.2125;
+                    color: #ffffff;
+                  }
+                }
+              }
+            }
+            .vector-3-zDK {
+              flex-shrink: 0;
+              margin-bottom: 63rem;
+              width: 192rem;
+              height: 0;
+              object-fit: contain;
+              vertical-align: top;
+            }
+            .auto-group-zggb-vMs {
+              flex-shrink: 0;
+              margin: 0rem 34.6rem 0rem 22.2rem;
+              width: calc(100% - 56.8rem);
+              height: 63rem;
+              display: flex;
+              align-items: center;
+
+              .layer-2-Sr1 {
+                margin: 0rem 14.6rem 7.325rem 0rem;
+                width: 42rem;
+                height: 35.2753rem;
+                object-fit: contain;
+                vertical-align: top;
+                flex-shrink: 0;
+              }
+              .vector-5-n9B {
+                margin-right: 9.8rem;
+                width: 0;
+                height: 63rem;
+                object-fit: contain;
+                vertical-align: top;
+                flex-shrink: 0;
+              }
+              .auto-group-vp5d-wGy {
+                margin: 19.1rem 0rem 18.5rem 0rem;
+                width: 68.8rem;
+                height: calc(100% - 37.6rem);
+                flex-shrink: 0;
+
+                .brand-marketing-rPw {
+                  text-transform: capitalize;
+                  color: #ffffff;
+                  font-family: Manrope, 'Source Sans Pro';
+                  white-space: nowrap;
+                  margin-bottom: 5.6rem;
+                  font-size: 6.4rem;
+                  font-weight: 800;
+                  line-height: 1.365;
+                }
+                .frame-137-9dw {
+                  box-sizing: border-box;
+                  padding-left: 0.5333rem;
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+
+                  .arrow-left-circle-JWq {
+                    margin: 0rem 6.433rem 0rem 0rem;
+                    width: 5.3333rem;
+                    height: 5.3333rem;
+                    object-fit: contain;
+                    vertical-align: top;
+                    flex-shrink: 0;
+                  }
+                  .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-DNu {
+                    color: #ffffff;
+                    font-family: Inter, 'Source Sans Pro';
+                    flex-shrink: 0;
+                    max-width: 56.5rem;
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    line-height: 1.2125;
+                  }
+                }
+              }
+            }
+            .vector-4-Rjs {
+              width: 192rem;
+              height: 0;
+              object-fit: contain;
+              vertical-align: top;
+              flex-shrink: 0;
+            }
+          }
+          .group-13-nKX {
+            margin-right: 0.1rem;
+            width: 26.5rem;
+            height: 26.5rem;
+            position: relative;
+            object-fit: contain;
+            vertical-align: top;
+            flex-shrink: 0;
+          }
+        }
+        .group-1-f8R {
+          width: 192rem;
+          height: 230.2rem;
+          position: absolute;
+          left: 0;
+          top: 606.9rem;
+          align-items: flex-end;
+          display: flex;
+          flex-direction: column;
+
+          .rectangle-12-bnm {
+            background-color: #ffffff;
+            border-radius: 30rem 0 0 0;
+            flex-shrink: 0;
+            width: 80.8rem;
+            height: 45.8rem;
+          }
+          .auto-group-ysso-M1F {
+            box-sizing: border-box;
+            padding: 25rem 16.2rem;
+            width: 100%;
+            height: 184.4rem;
+            background-color: #ffffff;
+            border-radius: 30rem 0 0 0;
+            flex-shrink: 0;
+
+            .group-26-tWy {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              height: 101.2rem;
+              align-items: center;
+
+              .frame-2-eW9 {
+                margin: 0rem 22.6rem 9.9rem 22.7rem;
+                width: calc(100% - 45.3rem);
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+
+                .pricing-PCq {
+                  font-size: 6.4rem;
+                  font-weight: 800;
+                  text-transform: capitalize;
+                  flex-shrink: 0;
+                  white-space: nowrap;
+                  margin-bottom: 2.4rem;
+                  line-height: 1.365;
+                  color: #0c0c0c;
+                  font-family: Manrope, 'Source Sans Pro';
+                }
+                .with-suitable-pricing-ghj {
+                  font-weight: 800;
+                  line-height: 1.365;
+                  font-family: Manrope, 'Source Sans Pro';
+                  white-space: nowrap;
+                  flex-shrink: 0;
+                  text-align: center;
+                  font-size: 11rem;
+                  text-transform: capitalize;
+                  color: #0c0c0c;
+                }
+              }
+              .auto-group-akip-nkm {
+                width: 100%;
+                height: 65rem;
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+
+                .frame-37-jvu {
+                  width: 49.8rem;
+                  height: 100%;
+                  background: linear-gradient(319.06deg, #3644db 114.86%, #d15bb2 204.38%);
+                  border-radius: 10rem;
+                  flex-shrink: 0;
+                  margin-right: 5rem;
+                  box-sizing: border-box;
+                  padding: 6.5rem 5.6rem;
+
+                  .frame-36-t37 {
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+
+                    .frame-35-F8Z {
+                      width: 100%;
+                      display: flex;
+                      flex-direction: column;
+                      flex-shrink: 0;
+                      margin-bottom: 6.2rem;
+
+                      .frame-34-QGM {
+                        margin-bottom: 4.9rem;
+                        width: 33.75rem;
+                        flex-shrink: 0;
+
+                        .basic-MhP {
+                          font-weight: 800;
+                          font-family: Manrope, 'Source Sans Pro';
+                          margin-bottom: 0.5rem;
+                          width: 100%;
+                          line-height: 1.365;
+                          text-transform: capitalize;
+                          color: #ffffff;
+                          white-space: nowrap;
+                          text-align: center;
+                          font-size: 3.2rem;
+                        }
+                        .package-461 {
+                          color: #ffffff;
+                          width: 100%;
+                          font-size: 4.4rem;
+                          line-height: 1.3660000888;
+                          text-transform: capitalize;
+                          display: flex;
+                          align-items: baseline;
+                          text-align: center;
+                          font-weight: 800;
+                          font-family: Manrope, 'Source Sans Pro';
+                          white-space: nowrap;
+
+                          .package-461-sub-0 {
+                            line-height: 1.365;
+                            text-transform: capitalize;
+                            color: #ffffff;
+                            font-family: Manrope, 'Source Sans Pro';
+                            font-size: 6.4rem;
+                            font-weight: 800;
+                          }
+                          .package-461-sub-1 {
+                            font-family: Manrope, 'Source Sans Pro';
+                            font-size: 1.8rem;
+                            font-weight: 800;
+                            line-height: 1.365;
+                            text-transform: capitalize;
+                            color: #ffffff;
+                          }
+                        }
+                      }
+                      .vector-11-qeV {
+                        height: 0;
+                        object-fit: contain;
+                        vertical-align: top;
+                        flex-shrink: 0;
+                        margin-bottom: 5rem;
+                        width: 38.6rem;
+                      }
+                      .frame-33-wxR {
+                        flex-shrink: 0;
+                        margin-left: 0.2rem;
+                        width: 37.6rem;
+                        row-gap: 2.2rem;
+                        display: flex;
+                        flex-direction: column;
+
+                        .frame-29-Rsb {
+                          display: flex;
+                          align-items: flex-end;
+                          flex-shrink: 0;
+                          width: 100%;
+
+                          .arrow-up-circle-KED {
+                            width: 2rem;
+                            height: 2rem;
+                            object-fit: contain;
+                            vertical-align: top;
+                            flex-shrink: 0;
+                            margin-right: 1.7rem;
+                          }
+                          .lorem-ipsum-dolor-sit-amet-consectetur-Ro3 {
+                            color: #ffffff;
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                            flex-shrink: 0;
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 1.2125;
+                          }
+                        }
+                        .frame-30-Y6y {
+                          margin-right: 10.7rem;
+                          width: calc(100% - 10.7rem);
+                          display: flex;
+                          align-items: flex-end;
+                          flex-shrink: 0;
+
+                          .arrow-up-circle-tRj {
+                            margin-right: 1.7rem;
+                            width: 2rem;
+                            height: 2rem;
+                            object-fit: contain;
+                            vertical-align: top;
+                            flex-shrink: 0;
+                          }
+                          .lorem-ipsum-dolor-sit-amet-deD {
+                            white-space: nowrap;
+                            flex-shrink: 0;
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 1.2125;
+                            color: #ffffff;
+                            font-family: Inter, 'Source Sans Pro';
+                          }
+                        }
+                        .frame-31-weu {
+                          width: 100%;
+                          display: flex;
+                          align-items: flex-end;
+                          flex-shrink: 0;
+
+                          .arrow-up-circle-73b {
+                            width: 2rem;
+                            height: 2rem;
+                            object-fit: contain;
+                            vertical-align: top;
+                            flex-shrink: 0;
+                            margin-right: 1.7rem;
+                          }
+                          .lorem-ipsum-dolor-sit-amet-consectetur-rG5 {
+                            color: #ffffff;
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                            flex-shrink: 0;
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 1.2125;
+                          }
+                        }
+                        .frame-32-BZF {
+                          margin-right: 10.2rem;
+                          width: calc(100% - 10.2rem);
+                          display: flex;
+                          align-items: flex-end;
+                          flex-shrink: 0;
+
+                          .arrow-up-circle-rvH {
+                            flex-shrink: 0;
+                            margin-right: 1.7rem;
+                            width: 2rem;
+                            height: 2rem;
+                            object-fit: contain;
+                            vertical-align: top;
+                          }
+                          .lorem-ipsum-dolor-sit-amet-yED {
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 1.2125;
+                            color: #ffffff;
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                            flex-shrink: 0;
+                          }
+                        }
+                      }
+                    }
+                    .frame-10-hg1 {
+                      padding: 1rem 4rem;
+                      width: calc(100% - 8rem);
+                      height: 6.8rem;
+                      background-color: #ffffff;
+                      border-radius: 20rem;
+                      flex-shrink: 0;
+                      margin: 0 4rem;
+                      box-sizing: border-box;
+
+                      .frame-4-oyw {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        padding: 0.75rem 0.523rem 0.75rem 0rem;
+                        width: 100%;
+
+                        .choose-now-9Y1 {
+                          line-height: 1.365;
+                          text-transform: capitalize;
+                          color: #0c0c0c;
+                          font-family: Manrope, 'Source Sans Pro';
+                          flex-shrink: 0;
+                          margin-right: 3.6rem;
+                          font-weight: 800;
+                          font-size: 2.4rem;
+                          white-space: nowrap;
+                        }
+                        .arrow-right-3-5gZ {
+                          height: 2.3004rem;
+                          object-fit: contain;
+                          vertical-align: top;
+                          flex-shrink: 0;
+                          margin-top: 0.3004rem;
+                          width: 3.6774rem;
+                        }
+                      }
+                    }
+                  }
+                }
+                .frame-38-MPB {
+                  flex-shrink: 0;
+                  margin-right: 5.2rem;
+                  box-sizing: border-box;
+                  padding: 6.5rem 5.6rem;
+                  width: 49.8rem;
+                  height: 100%;
+                  border-radius: 10rem;
+
+                  .frame-36-FzM {
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+
+                    .frame-35-t1j {
+                      margin-bottom: 6.2rem;
+                      width: 100%;
+                      display: flex;
+                      flex-direction: column;
+                      flex-shrink: 0;
+
+                      .frame-34-pAH {
+                        margin-bottom: 4.9rem;
+                        width: 34.75rem;
+                        flex-shrink: 0;
+
+                        .standard-mLR {
+                          width: 100%;
+                          text-align: center;
+                          font-weight: 800;
+                          color: #0c0c0c;
+                          white-space: nowrap;
+                          margin-bottom: 0.5rem;
+                          font-size: 3.2rem;
+                          line-height: 1.365;
+                          text-transform: capitalize;
+                          font-family: Manrope, 'Source Sans Pro';
+                        }
+                        .package-HJm {
+                          display: flex;
+                          width: 100%;
+                          text-align: center;
+                          font-weight: 800;
+                          line-height: 1.3660000888;
+                          color: #0c0c0c;
+                          font-family: Manrope, 'Source Sans Pro';
+                          white-space: nowrap;
+                          align-items: baseline;
+                          font-size: 4.4rem;
+                          text-transform: capitalize;
+
+                          .package-HJm-sub-0 {
+                            text-transform: capitalize;
+                            color: #0c0c0c;
+                            font-family: Manrope, 'Source Sans Pro';
+                            font-size: 6.4rem;
+                            font-weight: 800;
+                            line-height: 1.365;
+                          }
+                          .package-HJm-sub-1 {
+                            font-weight: 800;
+                            line-height: 1.365;
+                            text-transform: capitalize;
+                            color: #0c0c0c;
+                            font-family: Manrope, 'Source Sans Pro';
+                            font-size: 1.8rem;
+                          }
+                        }
+                      }
+                      .vector-11-aBP {
+                        margin-bottom: 5rem;
+                        width: 38.6rem;
+                        height: 0;
+                        object-fit: contain;
+                        vertical-align: top;
+                        flex-shrink: 0;
+                      }
+                      .frame-33-K8y {
+                        width: 37.6rem;
+                        row-gap: 2.2rem;
+                        display: flex;
+                        flex-direction: column;
+                        flex-shrink: 0;
+                        margin-left: 0.2rem;
+
+                        .frame-29-eBF {
+                          width: 100%;
+                          display: flex;
+                          align-items: flex-end;
+                          flex-shrink: 0;
+
+                          .arrow-up-circle-CyT {
+                            margin-right: 1.7rem;
+                            width: 2rem;
+                            height: 2rem;
+                            object-fit: contain;
+                            vertical-align: top;
+                            flex-shrink: 0;
+                          }
+                          .lorem-ipsum-dolor-sit-amet-consectetur-8MK {
+                            color: #0c0c0c;
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                            flex-shrink: 0;
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 1.2125;
+                          }
+                        }
+                        .frame-30-ro7 {
+                          display: flex;
+                          align-items: flex-end;
+                          flex-shrink: 0;
+                          margin-right: 10.7rem;
+                          width: calc(100% - 10.7rem);
+
+                          .arrow-up-circle-QZj {
+                            flex-shrink: 0;
+                            margin-right: 1.7rem;
+                            width: 2rem;
+                            height: 2rem;
+                            object-fit: contain;
+                            vertical-align: top;
+                          }
+                          .lorem-ipsum-dolor-sit-amet-9nD {
+                            flex-shrink: 0;
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 1.2125;
+                            color: #0c0c0c;
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                          }
+                        }
+                        .frame-31-3ch {
+                          width: 100%;
+                          display: flex;
+                          align-items: flex-end;
+                          flex-shrink: 0;
+
+                          .arrow-up-circle-CkV {
+                            width: 2rem;
+                            height: 2rem;
+                            object-fit: contain;
+                            vertical-align: top;
+                            flex-shrink: 0;
+                            margin-right: 1.7rem;
+                          }
+                          .lorem-ipsum-dolor-sit-amet-consectetur-65B {
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                            flex-shrink: 0;
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 1.2125;
+                            color: #0c0c0c;
+                          }
+                        }
+                        .frame-32-cZK {
+                          align-items: flex-end;
+                          flex-shrink: 0;
+                          margin-right: 10.2rem;
+                          width: calc(100% - 10.2rem);
+                          display: flex;
+
+                          .arrow-up-circle-N2h {
+                            margin-right: 1.7rem;
+                            width: 2rem;
+                            height: 2rem;
+                            object-fit: contain;
+                            vertical-align: top;
+                            flex-shrink: 0;
+                          }
+                          .lorem-ipsum-dolor-sit-amet-W8u {
+                            color: #0c0c0c;
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                            flex-shrink: 0;
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 1.2125;
+                          }
+                        }
+                      }
+                    }
+                    .frame-10-CGd {
+                      border-radius: 20rem;
+                      flex-shrink: 0;
+                      margin: 0 4rem;
+                      box-sizing: border-box;
+                      padding: 1rem 4rem;
+                      width: calc(100% - 8rem);
+                      height: 6.8rem;
+                      background: linear-gradient(319.06deg, #3644db 114.86%, #d15bb2 204.38%);
+
+                      .frame-4-HJ5 {
+                        box-sizing: border-box;
+                        padding: 0.75rem 0.523rem 0.75rem 0rem;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        .choose-now-R9P {
+                          margin-right: 3.6rem;
+                          font-size: 2.4rem;
+                          font-weight: 800;
+                          line-height: 1.365;
+                          text-transform: capitalize;
+                          color: #ffffff;
+                          font-family: Manrope, 'Source Sans Pro';
+                          white-space: nowrap;
+                          flex-shrink: 0;
+                        }
+                        .arrow-right-3-jvm {
+                          width: 3.6774rem;
+                          height: 2.3004rem;
+                          object-fit: contain;
+                          vertical-align: top;
+                          flex-shrink: 0;
+                          margin-top: 0.3004rem;
+                        }
+                      }
+                    }
+                  }
+                }
+                .frame-39-ovd {
+                  flex-shrink: 0;
+                  box-sizing: border-box;
+                  padding: 6.5rem 5.6rem;
+                  width: 49.8rem;
+                  height: 100%;
+                  border-radius: 10rem;
+
+                  .frame-36-x2q {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+
+                    .frame-35-i21 {
+                      margin-bottom: 6.2rem;
+                      width: 100%;
+                      display: flex;
+                      flex-direction: column;
+                      flex-shrink: 0;
+
+                      .frame-34-duf {
+                        flex-shrink: 0;
+                        margin-bottom: 4.9rem;
+                        width: 34.7rem;
+
+                        .premium-ZYR {
+                          color: #0c0c0c;
+                          font-family: Manrope, 'Source Sans Pro';
+                          white-space: nowrap;
+                          width: 100%;
+                          text-align: center;
+                          font-weight: 800;
+                          text-transform: capitalize;
+                          margin-bottom: 0.5rem;
+                          font-size: 3.2rem;
+                          line-height: 1.365;
+                        }
+                        .package-gsw {
+                          width: 100%;
+                          text-align: center;
+                          text-transform: capitalize;
+                          white-space: nowrap;
+                          display: flex;
+                          align-items: baseline;
+                          font-size: 4.4rem;
+                          font-weight: 800;
+                          line-height: 1.3660000888;
+                          color: #0c0c0c;
+                          font-family: Manrope, 'Source Sans Pro';
+
+                          .package-gsw-sub-0 {
+                            font-size: 6.4rem;
+                            font-weight: 800;
+                            line-height: 1.365;
+                            text-transform: capitalize;
+                            color: #0c0c0c;
+                            font-family: Manrope, 'Source Sans Pro';
+                          }
+                          .package-gsw-sub-1 {
+                            font-size: 1.8rem;
+                            font-weight: 800;
+                            line-height: 1.365;
+                            text-transform: capitalize;
+                            color: #0c0c0c;
+                            font-family: Manrope, 'Source Sans Pro';
+                          }
+                        }
+                      }
+                      .vector-11-qeM {
+                        vertical-align: top;
+                        flex-shrink: 0;
+                        margin-bottom: 5rem;
+                        width: 38.6rem;
+                        height: 0;
+                        object-fit: contain;
+                      }
+                      .frame-33-8Wy {
+                        row-gap: 2.2rem;
+                        display: flex;
+                        flex-direction: column;
+                        flex-shrink: 0;
+                        margin-left: 0.2rem;
+                        width: 37.6rem;
+
+                        .frame-29-dTj {
+                          width: 100%;
+                          display: flex;
+                          align-items: flex-end;
+                          flex-shrink: 0;
+
+                          .arrow-up-circle-nbX {
+                            height: 2rem;
+                            object-fit: contain;
+                            vertical-align: top;
+                            flex-shrink: 0;
+                            margin-right: 1.7rem;
+                            width: 2rem;
+                          }
+                          .lorem-ipsum-dolor-sit-amet-consectetur-vhj {
+                            flex-shrink: 0;
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 1.2125;
+                            color: #0c0c0c;
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                          }
+                        }
+                        .frame-30-TSm {
+                          align-items: flex-end;
+                          flex-shrink: 0;
+                          margin-right: 10.7rem;
+                          width: calc(100% - 10.7rem);
+                          display: flex;
+
+                          .arrow-up-circle-B7s {
+                            margin-right: 1.7rem;
+                            width: 2rem;
+                            height: 2rem;
+                            object-fit: contain;
+                            vertical-align: top;
+                            flex-shrink: 0;
+                          }
+                          .lorem-ipsum-dolor-sit-amet-5j3 {
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 1.2125;
+                            color: #0c0c0c;
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                            flex-shrink: 0;
+                          }
+                        }
+                        .frame-31-QFX {
+                          width: 100%;
+                          display: flex;
+                          align-items: flex-end;
+                          flex-shrink: 0;
+
+                          .arrow-up-circle-xXw {
+                            flex-shrink: 0;
+                            margin-right: 1.7rem;
+                            width: 2rem;
+                            height: 2rem;
+                            object-fit: contain;
+                            vertical-align: top;
+                          }
+                          .lorem-ipsum-dolor-sit-amet-consectetur-suo {
+                            line-height: 1.2125;
+                            color: #0c0c0c;
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                            flex-shrink: 0;
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                          }
+                        }
+                        .frame-32-zjX {
+                          margin-right: 10.2rem;
+                          width: calc(100% - 10.2rem);
+                          display: flex;
+                          align-items: flex-end;
+                          flex-shrink: 0;
+
+                          .arrow-up-circle-5ky {
+                            flex-shrink: 0;
+                            margin-right: 1.7rem;
+                            width: 2rem;
+                            height: 2rem;
+                            object-fit: contain;
+                            vertical-align: top;
+                          }
+                          .lorem-ipsum-dolor-sit-amet-dXb {
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 1.2125;
+                            color: #0c0c0c;
+                            font-family: Inter, 'Source Sans Pro';
+                            white-space: nowrap;
+                            flex-shrink: 0;
+                          }
+                        }
+                      }
+                    }
+                    .frame-10-AGd {
+                      box-sizing: border-box;
+                      padding: 1rem 4rem;
+                      width: calc(100% - 8rem);
+                      height: 6.8rem;
+                      background: linear-gradient(319.06deg, #3644db 114.86%, #d15bb2 204.38%);
+                      border-radius: 20rem;
+                      flex-shrink: 0;
+                      margin: 0 4rem;
+
+                      .frame-4-Vph {
+                        padding: 0.75rem 0.523rem 0.75rem 0rem;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+
+                        .choose-now-pMB {
+                          font-weight: 800;
+                          text-transform: capitalize;
+                          flex-shrink: 0;
+                          margin-right: 3.6rem;
+                          font-size: 2.4rem;
+                          line-height: 1.365;
+                          color: #ffffff;
+                          font-family: Manrope, 'Source Sans Pro';
+                          white-space: nowrap;
+                        }
+                        .arrow-right-3-Wzh {
+                          object-fit: contain;
+                          vertical-align: top;
+                          flex-shrink: 0;
+                          margin-top: 0.3004rem;
+                          width: 3.6774rem;
+                          height: 2.3004rem;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-jcZ {
+          left: 16.2rem;
+          top: 1021.8rem;
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 1.2125;
+          color: #ffffff;
+          width: 56.5rem;
+          height: 6.6rem;
+          font-family: Inter, 'Source Sans Pro';
+          position: absolute;
+        }
+        .group-14-9AV {
+          height: 296.6rem;
+          position: absolute;
+          top: 803.9rem;
+          background-color: #0c0c0c;
+          box-sizing: border-box;
+          padding: 25rem 16.2rem 29.4rem 16.2rem;
+          width: 192rem;
+          left: 0;
+          border-radius: 30rem 30rem 30rem 0;
+
+          .group-27-2k5 {
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            .frame-3-PKj {
+              margin-bottom: 9.9rem;
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+
+              .news-9Ju {
+                font-family: Manrope, 'Source Sans Pro';
+                white-space: nowrap;
+                flex-shrink: 0;
+                margin-bottom: 2.4rem;
+                font-size: 6.4rem;
+                font-weight: 800;
+                line-height: 1.365;
+                text-transform: capitalize;
+              }
+              .latest-news-uploaded-5yF {
+                flex-shrink: 0;
+                font-size: 11rem;
+                font-weight: 800;
+                line-height: 1.365;
+                text-transform: capitalize;
+                color: #ffffff;
+                font-family: Manrope, 'Source Sans Pro';
+                white-space: nowrap;
+              }
+            }
+            .auto-group-39qd-QVj {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              flex-shrink: 0;
+
+              .mask-group-ZdX {
+                position: relative;
+                object-fit: contain;
+                vertical-align: top;
+                flex-shrink: 0;
+                margin-right: 5rem;
+                width: 77.3rem;
+                height: 60rem;
+              }
+              .mask-group-79F {
+                flex-shrink: 0;
+                width: 77.3rem;
+                height: 60rem;
+                position: relative;
+                object-fit: contain;
+                vertical-align: top;
+              }
+            }
+            .auto-group-qte3-rMj {
+              box-sizing: border-box;
+              padding-top: 4.6rem;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+
+              .auto-group-ngqz-wty {
+                margin: 0rem 13rem 14.6rem 0rem;
+                width: calc(100% - 13rem);
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+
+                .frame-12-fKB {
+                  margin: 0.4rem 18rem 0rem 0rem;
+                  width: 64.3rem;
+                  flex-shrink: 0;
+
+                  .frame-11-Z9f {
+                    margin-bottom: 6rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .youtube-provides-key-tips-on-how-to-build-your-channel-uzD {
+                      line-height: 1.365;
+                      text-transform: capitalize;
+                      max-width: 64.3rem;
+                      font-size: 4.4rem;
+                      font-weight: 800;
+                      color: #ffffff;
+                      font-family: Manrope, 'Source Sans Pro';
+                      flex-shrink: 0;
+                      margin-bottom: 2.9rem;
+                    }
+                    .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-CiR {
+                      font-weight: 400;
+                      line-height: 1.2125;
+                      color: #ffffff;
+                      font-family: Inter, 'Source Sans Pro';
+                      flex-shrink: 0;
+                      max-width: 56.5rem;
+                      font-size: 1.8rem;
+                    }
+                  }
+                  .frame-10-fru {
+                    padding: 2.3rem 7.5rem;
+                    width: 38.9rem;
+                    height: 9.4rem;
+                    background: linear-gradient(319.06deg, #3644db 114.86%, #d15bb2 204.38%);
+                    border-radius: 20rem;
+                    box-sizing: border-box;
+
+                    .frame-4-1fs {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+                      box-sizing: border-box;
+                      padding: 0.2rem 0.523rem 0.2rem 0rem;
+
+                      .see-detail-wZX {
+                        margin-right: 3.6rem;
+                        line-height: 1.365;
+                        text-transform: capitalize;
+                        color: #ffffff;
+                        font-size: 3.2rem;
+                        font-weight: 800;
+                        font-family: Manrope, 'Source Sans Pro';
+                        white-space: nowrap;
+                        flex-shrink: 0;
+                      }
+                      .arrow-right-3-48M {
+                        width: 3.6774rem;
+                        height: 2.3004rem;
+                        object-fit: contain;
+                        vertical-align: top;
+                        flex-shrink: 0;
+                        margin-top: 0.3004rem;
+                      }
+                    }
+                  }
+                }
+                .frame-13-wxq {
+                  margin-bottom: 0.4rem;
+                  width: 64.3rem;
+                  flex-shrink: 0;
+
+                  .frame-11-uPs {
+                    margin-bottom: 6rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .youtube-provides-key-tips-on-how-to-build-your-channel-FyX {
+                      font-size: 4.4rem;
+                      font-weight: 800;
+                      line-height: 1.365;
+                      flex-shrink: 0;
+                      font-family: Manrope, 'Source Sans Pro';
+                      margin-bottom: 2.9rem;
+                      max-width: 64.3rem;
+                      text-transform: capitalize;
+                      color: #ffffff;
+                    }
+                    .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-Vss {
+                      line-height: 1.2125;
+                      color: #ffffff;
+                      font-family: Inter, 'Source Sans Pro';
+                      flex-shrink: 0;
+                      max-width: 56.5rem;
+                      font-size: 1.8rem;
+                      font-weight: 400;
+                    }
+                  }
+                  .frame-10-Aj7 {
+                    background: linear-gradient(319.06deg, #3644db 114.86%, #d15bb2 204.38%);
+                    border-radius: 20rem;
+                    box-sizing: border-box;
+                    padding: 2.3rem 7.5rem;
+                    width: 38.9rem;
+                    height: 9.4rem;
+
+                    .frame-4-FkZ {
+                      box-sizing: border-box;
+                      padding: 0.2rem 0.523rem 0.2rem 0rem;
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      align-items: center;
+
+                      .see-detail-Prm {
+                        font-weight: 800;
+                        text-transform: capitalize;
+                        flex-shrink: 0;
+                        margin-right: 3.6rem;
+                        font-size: 3.2rem;
+                        line-height: 1.365;
+                        color: #ffffff;
+                        font-family: Manrope, 'Source Sans Pro';
+                        white-space: nowrap;
+                      }
+                      .arrow-right-3-j9w {
+                        object-fit: contain;
+                        vertical-align: top;
+                        flex-shrink: 0;
+                        margin-top: 0.3004rem;
+                        width: 3.6774rem;
+                        height: 2.3004rem;
+                      }
+                    }
+                  }
+                }
+              }
+              .mask-group-D57 {
+                height: 60rem;
+                position: relative;
+                object-fit: contain;
+                vertical-align: top;
+                flex-shrink: 0;
+                margin-bottom: 5rem;
+                width: 159.6rem;
+              }
+              .frame-21-xHb {
+                margin-right: 7.5rem;
+                width: calc(100% - 7.5rem);
+                height: 24.4rem;
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+
+                .frame-19-22Z {
+                  margin-right: 34.3rem;
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  flex-shrink: 0;
+
+                  .youtube-provides-key-tips-on-how-to-build-your-channel-yTb {
+                    font-family: Manrope, 'Source Sans Pro';
+                    max-width: 78.9rem;
+                    font-weight: 800;
+                    line-height: 1.365;
+                    text-transform: capitalize;
+                    color: #ffffff;
+                    margin-bottom: 3rem;
+                    font-size: 5.4rem;
+                    flex-shrink: 0;
+                  }
+                  .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-gcu {
+                    max-width: 56.5rem;
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    line-height: 1.2125;
+                    color: #ffffff;
+                    font-family: Inter, 'Source Sans Pro';
+                    flex-shrink: 0;
+                  }
+                }
+                .frame-8-AHB {
+                  border-radius: 20rem;
+                  flex-shrink: 0;
+                  margin: 7.5rem 0;
+                  box-sizing: border-box;
+                  padding: 2.3rem 7.5rem;
+                  width: 38.9rem;
+                  height: calc(100% - 15rem);
+                  background: linear-gradient(319.06deg, #3644db 114.86%, #d15bb2 204.38%);
+
+                  .frame-4-VaM {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+                    padding: 0.2rem 0.523rem 0.2rem 0rem;
+
+                    .see-detail-EH3 {
+                      font-family: Manrope, 'Source Sans Pro';
+                      font-size: 3.2rem;
+                      line-height: 1.365;
+                      text-transform: capitalize;
+                      color: #ffffff;
+                      white-space: nowrap;
+                      flex-shrink: 0;
+                      margin-right: 3.6rem;
+                      font-weight: 800;
+                    }
+                    .arrow-right-3-wx9 {
+                      width: 3.6774rem;
+                      height: 2.3004rem;
+                      object-fit: contain;
+                      vertical-align: top;
+                      flex-shrink: 0;
+                      margin-top: 0.3004rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .group-15-pPf {
+          width: 192rem;
+          height: 154.1rem;
+          align-items: center;
+          flex-direction: column;
+          background-color: #0c0c0c;
+          box-sizing: border-box;
+          padding: 25rem 16.2rem;
+          position: absolute;
+          left: 0;
+          top: 498.6rem;
+          display: flex;
+          border-radius: 30rem 30rem 30rem 0;
+
+          .frame-1-vSh {
+            flex-direction: column;
+            flex-shrink: 0;
+            margin: 0rem 21.9rem 9.9rem 0rem;
+            display: flex;
+
+            .testimonials-4oo {
+              line-height: 1.365;
+              text-transform: capitalize;
+              font-family: Manrope, 'Source Sans Pro';
+              white-space: nowrap;
+              flex-shrink: 0;
+              margin-bottom: 2.4rem;
+              font-size: 6.4rem;
+              font-weight: 800;
+            }
+            .what-they-say-about-us-CQD {
+              text-transform: capitalize;
+              color: #ffffff;
+              font-family: Manrope, 'Source Sans Pro';
+              white-space: nowrap;
+              flex-shrink: 0;
+              font-size: 11rem;
+              font-weight: 800;
+              line-height: 1.365;
+            }
+          }
+          .auto-group-8c75-8of {
+            box-sizing: border-box;
+            padding: 5rem 16.3rem 4.9rem 5rem;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            width: 100%;
+            height: 67.9rem;
+            background-color: #ffffff;
+            border-radius: 20rem;
+
+            .mask-group-dkR {
+              position: relative;
+              object-fit: contain;
+              vertical-align: top;
+              flex-shrink: 0;
+              margin-right: 8.6rem;
+              width: 53.5rem;
+              height: 58rem;
+            }
+            .auto-group-xwat-FWu {
+              width: 76.2rem;
+              height: calc(100% - 23.2rem);
+              position: relative;
+              flex-shrink: 0;
+              margin: 7.8rem 0rem 15.4rem 0rem;
+
+              .item--yho {
+                left: 51.4rem;
+                top: 0;
+                object-fit: contain;
+                vertical-align: top;
+                width: 18.2rem;
+                height: 13.8rem;
+                position: absolute;
+              }
+              .frame-40-JVB {
+                width: 76.2rem;
+                height: 27.2rem;
+                position: absolute;
+                left: 0;
+                top: 7.6rem;
+
+                .lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-tincidunt-sem-orci-nunc-scelerisque-interdum-ullamcorper-lacus-enim-in-tempus-scelerisque-arcu-nunc-a-dignissim-aliquet-pretium-egestas-dui-vel-quis-nunc-etiam-viverra-et-vitae-in-aliquet-nullam-vulputate-id-dui-tortor-volutpat-eu-tristique-neque-bibendum-amet-dictum-convallis-gravida-pellentesque-nisi-sit-volutpat-in-vitae-fusce-in-morbi-consequat-sit-pellentesque-morbi-sed-egestas-enim-consectetur-eJ9 {
+                  line-height: 1.2125;
+                  color: #000000;
+                  font-family: Inter, 'Source Sans Pro';
+                  margin-bottom: 3.1rem;
+                  max-width: 76.2rem;
+                  font-size: 1.8rem;
+                  font-weight: 400;
+                }
+                .lucas-d-ceo-of-ganians-fMf {
+                  font-weight: 700;
+                  line-height: 1.365;
+                  color: #000000;
+                  font-family: Manrope, 'Source Sans Pro';
+                  white-space: nowrap;
+                  font-size: 3.2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+  </style>
+</head>
+<body>
+<div class="homepage-Wjo">
+  <div class="component-1-X97">
+    <div class="auto-group-dkkh-Wv9">
+      <div class="rectangle-7-nsf">
+      </div>
+      <div class="rectangle-6-tvh">
+      </div>
+      <img class="vector-6-Q8M" src="./assets/vector-6-WR3.png"/>
+      <p class="make-follower-wPB">Make FOLLOWER</p>
+      <div class="frame-157-LgD">
+        <div class="frame-155-34q">
+          <img class="g20-YnH" src="./assets/g20-Hss.png"/>
+          <p class="lacy-tLM">Lacy</p>
+        </div>
+        <div class="frame-7-R7K">
+          <p class="home-KiV">Home</p>
+          <p class="about-us-3Pb">About Us</p>
+          <p class="page-MfB">Page</p>
+          <p class="contact-us-Uzh">Contact Us</p>
+        </div>
+      </div>
+      <div class="rectangle-5-cr1">
+      </div>
+      <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-iu3">Lorem ipsum dolor sit amet consectetur. Mauris aliquam urna diam volutpat sed. Tortor suspendisse pretium in hendrerit tellus. Morbi aenean diam magna a ornare integer sit eu. Quis enim mauris consequat sit augue. Eu morbi curabitur amet morbi magna integer feugiat morbi nunc.</p>
+      <div class="frame-18-7gH">
+        <div class="frame-14-SCm">
+          <p class="project-done-nXX">Project done</p>
+          <p class="item-220-s3B">220+</p>
+        </div>
+        <div class="frame-15-yc1">
+          <p class="our-team-XtR">Our team</p>
+          <p class="item-110-DmF">110+</p>
+        </div>
+        <div class="frame-16-MsT">
+          <p class="reviewed-hRX">Reviewed</p>
+          <p class="item-135-ERT">135+</p>
+        </div>
+        <div class="frame-17-Aa1">
+          <p class="happy-client-W85">Happy client</p>
+          <p class="item-330-diV">330+</p>
+        </div>
+      </div>
+      <img class="group-4-y1f" src="./assets/group-4.png"/>
+      <div class="frame-6-uAD">engagement</div>
+      <p class="with-social-media-6kV">with social media</p>
+      <img class="mask-group-CHj" src="./assets/mask-group-4ff.png"/>
+      <div class="group-30-VGq">
+        <div class="auto-group-egw5-Did">
+          <p class="we-are-the-best-solution-for-your-social-media-Yku">We Are The Best Solution For Your Social Media</p>
+          <p class="about-us-FvD">//About us</p>
+        </div>
+        <div class="auto-group-bpbu-18h">
+          <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-kMB">Lorem ipsum dolor sit amet consectetur. Mauris aliquam urna diam volutpat sed. Tortor suspendisse pretium in hendrerit tellus. Morbi aenean diam magna a ornare integer sit eu. Quis enim mauris consequat sit augue. Eu morbi curabitur amet morbi magna integer feugiat morbi nunc.</p>
+          <div class="group-24-iSR">
+            <img class="mask-group-Qq3" src="./assets/mask-group-Vjs.png"/>
+            <img class="group-7-jsK" src="./assets/group-7.png"/>
+          </div>
+        </div>
+      </div>
+      <div class="frame-145-gGm">
+        <div class="frame-144-knR">
+          <p class="why-choose-us-UiR">Why Choose Us?</p>
+          <div class="frame-141-okh">
+            <img class="frame-153-9pZ" src="./assets/frame-153.png"/>
+            <div class="group-44-SYm">
+              <p class="quickly-services-aus">Quickly services</p>
+              <div class="frame-138-uSM">
+                <img class="ticket-star-yh7" src="./assets/ticket-star.png"/>
+                <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-tZB">Lorem ipsum dolor sit amet consectetur. Mauris aliquam urna diam volutpat sed. Tortor suspendisse pretium in hendrerit tellus. Morbi aenean diam magna a ornare integer sit eu. Quis enim mauris consequat sit augue. Eu morbi curabitur amet morbi magna integer feugiat morbi nunc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="frame-142-fyF">
+            <div class="group-44-DUy">
+              <p class="professional-team-yDF">Professional team</p>
+              <div class="frame-138-WU5">
+                <img class="ticket-star-pDs" src="./assets/ticket-star-foK.png"/>
+                <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-ZSM">Lorem ipsum dolor sit amet consectetur. Mauris aliquam urna diam volutpat sed. Tortor suspendisse pretium in hendrerit tellus. Morbi aenean diam magna a ornare integer sit eu. Quis enim mauris consequat sit augue. Eu morbi curabitur amet morbi magna integer feugiat morbi nunc.</p>
+              </div>
+            </div>
+            <img class="frame-153-zGm" src="./assets/frame-153-XAD.png"/>
+          </div>
+          <div class="frame-143-vw7">
+            <img class="frame-153-USq" src="./assets/frame-153-4D3.png"/>
+            <div class="group-44-wbK">
+              <p class="guranted-services-Jgm">Guranted services</p>
+              <div class="frame-138-RFb">
+                <img class="ticket-star-Muw" src="./assets/ticket-star-tvZ.png"/>
+                <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-WH3">Lorem ipsum dolor sit amet consectetur. Mauris aliquam urna diam volutpat sed. Tortor suspendisse pretium in hendrerit tellus. Morbi aenean diam magna a ornare integer sit eu. Quis enim mauris consequat sit augue. Eu morbi curabitur amet morbi magna integer feugiat morbi nunc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="auto-group-gkno-UNH">
+      <div class="promotion-QFw">
+        <img class="vector-6-MBB" src="./assets/vector-6.png"/>
+        <div class="frame-46-gjF">
+          <p class="make-your-business-known-to-people-with-us-bLR">Make your business known to people with us</p>
+          <div class="frame-10-Vwb">
+            <div class="frame-4-nvh">
+              <p class="lets-discuss-8Um">Let’s Discuss</p>
+              <img class="arrow-right-3-dRX" src="./assets/arrow-right-3-jGH.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="auto-group-b1qo-VTj">
+        <div class="footer-3EM">
+          <div class="frame-115-AJy">
+            <div class="frame-113-VMF">
+              <div class="frame-112-YaR">
+                <div class="frame-155-rr1">
+                  <img class="g20-oWM" src="./assets/g20.png"/>
+                  <p class="lacy-Yyj">Lacy</p>
+                </div>
+                <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-foT">Lorem ipsum dolor sit amet consectetur Mauris aliquam urna diam.</p>
+              </div>
+              <div class="frame-109-xnZ">
+                <p class="page-j2d">Page</p>
+                <div class="frame-110-Sxd">
+                  <p class="project-oYH">Project</p>
+                  <p class="news-xAH">News</p>
+                  <p class="news-detail-6XP">News Detail</p>
+                  <p class="faq-qjs">FaQ</p>
+                </div>
+              </div>
+              <div class="auto-group-ztd1-yLH">
+                <div class="frame-110-vWR">
+                  <p class="links-UH3">Links</p>
+                  <div class="frame-110-1nm">
+                    <p class="term-of-use-yDo">Term Of Use</p>
+                    <p class="privacy-policy-h9o">Privacy Policy</p>
+                  </div>
+                </div>
+                <div class="frame-84-Qpu">
+                  <p class="contact-us-m9f">Contact Us</p>
+                  <div class="frame-83-JfP">
+                    <div class="auto-group-hirw-sCh">
+                      <div class="frame-82-RED">
+                        <img class="call-VE5" src="./assets/call.png"/>
+                        <p class="item-11-2174-8721-7322-p1T">+11 2174 8721 7322</p>
+                      </div>
+                      <div class="frame-81-8H3">
+                        <img class="message-emB" src="./assets/message.png"/>
+                        <p class="lacyagencydomaincom-Pim">lacyagency@domain.com</p>
+                      </div>
+                    </div>
+                    <div class="frame-80-78y">
+                      <img class="location-r6Z" src="./assets/location.png"/>
+                      <p class="one-tower-3211la-california-xfP">One Tower 3211,LA - California</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="vector-12-fph" src="./assets/vector-12.png"/>
+            <div class="frame-114-CZj">
+              <div class="frame-108-ZQH">
+                <img class="akar-icons-facebook-fill-thT" src="./assets/akar-icons-facebook-fill.png"/>
+                <img class="akar-icons-linkedin-box-fill-1n5" src="./assets/akar-icons-linkedin-box-fill.png"/>
+                <img class="akar-icons-twitter-fill-igV" src="./assets/akar-icons-twitter-fill.png"/>
+                <img class="ant-design-instagram-filled-ztu" src="./assets/ant-design-instagram-filled.png"/>
+              </div>
+              <p class="copyright-2022-lacy-all-right-reserved-wJM">Copyright @2022 Lacy All Right Reserved</p>
+            </div>
+          </div>
+        </div>
+        <div class="group-1-npm">
+          <div class="rectangle-12-Vz5">
+          </div>
+          <div class="auto-group-6mgw-3Eu">
+            <div class="group-32-nCV">
+              <div class="frame-2-Ljo">
+                <p class="project-haM">// project</p>
+                <p class="discover-and-see-some-of-our-projects-done-Dob">Discover and see some of our projects Done</p>
+              </div>
+              <div class="auto-group-j6ur-9SM">
+                <img class="group-12-Vm7" src="./assets/group-12.png"/>
+                <div class="group-25-Eih">
+                  <div class="auto-group-jqmd-nVK">
+                    <img class="mask-group-kBF" src="./assets/mask-group-3dw.png"/>
+                    <img class="mask-group-G9b" src="./assets/mask-group-ozu.png"/>
+                  </div>
+                  <div class="auto-group-mifu-DKj">
+                    <div class="auto-group-tnxm-wFj">
+                      <div class="frame-140-gUD">Haggy Project</div>
+                    </div>
+                    <img class="mask-group-Hyo" src="./assets/mask-group.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="group-3-nff">
+          <div class="group-31-uEV">
+            <div class="frame-3-cub">
+              <p class="services-ZK3">// Services</p>
+              <p class="our-professional-services-52V">Our Professional Services</p>
+            </div>
+            <img class="vector-1-cHK" src="REPLACE_IMAGE:1:92"/>
+            <div class="auto-group-jkex-92M">
+              <img class="asset-95-4f7" src="./assets/asset-95.png"/>
+              <img class="vector-2-mpR" src="REPLACE_IMAGE:1:94"/>
+              <div class="auto-group-pqab-L6q">
+                <p class="social-media-marketing-q3b">Social Media Marketing</p>
+                <div class="frame-136-j8y">
+                  <img class="arrow-left-circle-Tqf" src="./assets/arrow-left-circle.png"/>
+                  <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-zah">Lorem ipsum dolor sit amet consectetur. Mauris aliquam urna diam volutpat sed. Tortor suspendisse pretium in hendrerit tellus. Morbi aenean diam magna a ornare integer sit eu. Quis enim mauris consequat sit augue. Eu morbi curabitur amet morbi magna integer feugiat morbi nunc.</p>
+                </div>
+              </div>
+            </div>
+            <img class="vector-3-zDK" src="REPLACE_IMAGE:1:93"/>
+            <div class="auto-group-zggb-vMs">
+              <img class="layer-2-Sr1" src="./assets/layer-2.png"/>
+              <img class="vector-5-n9B" src="REPLACE_IMAGE:1:95"/>
+              <div class="auto-group-vp5d-wGy">
+                <p class="brand-marketing-rPw">Brand Marketing</p>
+                <div class="frame-137-9dw">
+                  <img class="arrow-left-circle-JWq" src="./assets/arrow-left-circle-Yry.png"/>
+                  <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-DNu">Lorem ipsum dolor sit amet consectetur. Mauris aliquam urna diam volutpat sed. Tortor suspendisse pretium in hendrerit tellus. Morbi aenean diam magna a ornare integer sit eu. Quis enim mauris consequat sit augue. Eu morbi curabitur amet morbi magna integer feugiat morbi nunc.</p>
+                </div>
+              </div>
+            </div>
+            <img class="vector-4-Rjs" src="REPLACE_IMAGE:1:74"/>
+          </div>
+          <img class="group-13-nKX" src="./assets/group-13.png"/>
+        </div>
+        <div class="group-1-f8R">
+          <div class="rectangle-12-bnm">
+          </div>
+          <div class="auto-group-ysso-M1F">
+            <div class="group-26-tWy">
+              <div class="frame-2-eW9">
+                <p class="pricing-PCq">// Pricing</p>
+                <p class="with-suitable-pricing-ghj">With suitable pricing</p>
+              </div>
+              <div class="auto-group-akip-nkm">
+                <div class="frame-37-jvu">
+                  <div class="frame-36-t37">
+                    <div class="frame-35-F8Z">
+                      <div class="frame-34-QGM">
+                        <p class="basic-MhP">Basic</p>
+                        <p class="package-461">
+                          <span class="package-461-sub-0">$124,99/</span>
+                          <span class="package-461-sub-1">package</span>
+                        </p>
+                      </div>
+                      <img class="vector-11-qeV" src="REPLACE_IMAGE:1:120"/>
+                      <div class="frame-33-wxR">
+                        <div class="frame-29-Rsb">
+                          <img class="arrow-up-circle-KED" src="./assets/arrow-up-circle-4n9.png"/>
+                          <p class="lorem-ipsum-dolor-sit-amet-consectetur-Ro3">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="frame-30-Y6y">
+                          <img class="arrow-up-circle-tRj" src="./assets/arrow-up-circle-nnh.png"/>
+                          <p class="lorem-ipsum-dolor-sit-amet-deD">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="frame-31-weu">
+                          <img class="arrow-up-circle-73b" src="./assets/arrow-up-circle-aEh.png"/>
+                          <p class="lorem-ipsum-dolor-sit-amet-consectetur-rG5">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="frame-32-BZF">
+                          <img class="arrow-up-circle-rvH" src="./assets/arrow-up-circle.png"/>
+                          <p class="lorem-ipsum-dolor-sit-amet-yED">Lorem ipsum dolor sit amet </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="frame-10-hg1">
+                      <div class="frame-4-oyw">
+                        <p class="choose-now-9Y1">Choose now</p>
+                        <img class="arrow-right-3-5gZ" src="./assets/arrow-right-3-Vjb.png"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-38-MPB">
+                  <div class="frame-36-FzM">
+                    <div class="frame-35-t1j">
+                      <div class="frame-34-pAH">
+                        <p class="standard-mLR">Standard</p>
+                        <p class="package-HJm">
+                          <span class="package-HJm-sub-0">$224,99/</span>
+                          <span class="package-HJm-sub-1">package</span>
+                        </p>
+                      </div>
+                      <img class="vector-11-aBP" src="REPLACE_IMAGE:1:160"/>
+                      <div class="frame-33-K8y">
+                        <div class="frame-29-eBF">
+                          <img class="arrow-up-circle-CyT" src="./assets/arrow-up-circle-p7w.png"/>
+                          <p class="lorem-ipsum-dolor-sit-amet-consectetur-8MK">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="frame-30-ro7">
+                          <img class="arrow-up-circle-QZj" src="./assets/arrow-up-circle-rVj.png"/>
+                          <p class="lorem-ipsum-dolor-sit-amet-9nD">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="frame-31-3ch">
+                          <img class="arrow-up-circle-CkV" src="./assets/arrow-up-circle-q41.png"/>
+                          <p class="lorem-ipsum-dolor-sit-amet-consectetur-65B">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="frame-32-cZK">
+                          <img class="arrow-up-circle-N2h" src="./assets/arrow-up-circle-NzR.png"/>
+                          <p class="lorem-ipsum-dolor-sit-amet-W8u">Lorem ipsum dolor sit amet </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="frame-10-CGd">
+                      <div class="frame-4-HJ5">
+                        <p class="choose-now-R9P">Choose now</p>
+                        <img class="arrow-right-3-jvm" src="./assets/arrow-right-3-8gD.png"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-39-ovd">
+                  <div class="frame-36-x2q">
+                    <div class="frame-35-i21">
+                      <div class="frame-34-duf">
+                        <p class="premium-ZYR">Premium</p>
+                        <p class="package-gsw">
+                          <span class="package-gsw-sub-0">$334,99/</span>
+                          <span class="package-gsw-sub-1">package</span>
+                        </p>
+                      </div>
+                      <img class="vector-11-qeM" src="REPLACE_IMAGE:1:200"/>
+                      <div class="frame-33-8Wy">
+                        <div class="frame-29-dTj">
+                          <img class="arrow-up-circle-nbX" src="./assets/arrow-up-circle-GuK.png"/>
+                          <p class="lorem-ipsum-dolor-sit-amet-consectetur-vhj">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="frame-30-TSm">
+                          <img class="arrow-up-circle-B7s" src="./assets/arrow-up-circle-PD7.png"/>
+                          <p class="lorem-ipsum-dolor-sit-amet-5j3">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="frame-31-QFX">
+                          <img class="arrow-up-circle-xXw" src="./assets/arrow-up-circle-J1T.png"/>
+                          <p class="lorem-ipsum-dolor-sit-amet-consectetur-suo">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="frame-32-zjX">
+                          <img class="arrow-up-circle-5ky" src="./assets/arrow-up-circle-JrZ.png"/>
+                          <p class="lorem-ipsum-dolor-sit-amet-dXb">Lorem ipsum dolor sit amet </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="frame-10-AGd">
+                      <div class="frame-4-Vph">
+                        <p class="choose-now-pMB">Choose now</p>
+                        <img class="arrow-right-3-Wzh" src="./assets/arrow-right-3.png"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-jcZ">Lorem ipsum dolor sit amet consectetur. Mauris aliquam urna diam volutpat sed. Tortor suspendisse pretium in hendrerit tellus. Morbi aenean diam magna a ornare integer sit eu.</p>
+        <div class="group-14-9AV">
+          <div class="group-27-2k5">
+            <div class="frame-3-PKj">
+              <p class="news-9Ju">// News</p>
+              <p class="latest-news-uploaded-5yF">Latest News uploaded</p>
+            </div>
+            <div class="auto-group-39qd-QVj">
+              <img class="mask-group-ZdX" src="./assets/mask-group-1TB.png"/>
+              <img class="mask-group-79F" src="./assets/mask-group-HT3.png"/>
+            </div>
+            <div class="auto-group-qte3-rMj">
+              <div class="auto-group-ngqz-wty">
+                <div class="frame-12-fKB">
+                  <div class="frame-11-Z9f">
+                    <p class="youtube-provides-key-tips-on-how-to-build-your-channel-uzD">YouTube Provides Key Tips on How to Build Your Channel... </p>
+                    <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-CiR">Lorem ipsum dolor sit amet consectetur. Mauris aliquam urna diam volutpat sed. Tortor suspendisse pretium in hendrerit tellus. Morbi aenean diam magna a ornare integer sit eu.</p>
+                  </div>
+                  <div class="frame-10-fru">
+                    <div class="frame-4-1fs">
+                      <p class="see-detail-wZX">See Detail</p>
+                      <img class="arrow-right-3-48M" src="./assets/arrow-right-3-Sd3.png"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-13-wxq">
+                  <div class="frame-11-uPs">
+                    <p class="youtube-provides-key-tips-on-how-to-build-your-channel-FyX">YouTube Provides Key Tips on How to Build Your Channel... </p>
+                    <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-Vss">Lorem ipsum dolor sit amet consectetur. Mauris aliquam urna diam volutpat sed. Tortor suspendisse pretium in hendrerit tellus. Morbi aenean diam magna a ornare integer sit eu.</p>
+                  </div>
+                  <div class="frame-10-Aj7">
+                    <div class="frame-4-FkZ">
+                      <p class="see-detail-Prm">See Detail</p>
+                      <img class="arrow-right-3-j9w" src="./assets/arrow-right-3-n8u.png"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img class="mask-group-D57" src="./assets/mask-group-8AR.png"/>
+              <div class="frame-21-xHb">
+                <div class="frame-19-22Z">
+                  <p class="youtube-provides-key-tips-on-how-to-build-your-channel-yTb">YouTube Provides Key Tips on How to Build Your Channel... </p>
+                  <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-gcu">Lorem ipsum dolor sit amet consectetur. Mauris aliquam urna diam volutpat sed. Tortor suspendisse pretium in hendrerit tellus. Morbi aenean diam magna a ornare integer sit eu.</p>
+                </div>
+                <div class="frame-8-AHB">
+                  <div class="frame-4-VaM">
+                    <p class="see-detail-EH3">See Detail</p>
+                    <img class="arrow-right-3-wx9" src="./assets/arrow-right-3-tiH.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="group-15-pPf">
+          <div class="frame-1-vSh">
+            <p class="testimonials-4oo">// Testimonials</p>
+            <p class="what-they-say-about-us-CQD">What They Say About us?</p>
+          </div>
+          <div class="auto-group-8c75-8of">
+            <img class="mask-group-dkR" src="./assets/mask-group-xwF.png"/>
+            <div class="auto-group-xwat-FWu">
+              <img class="item--yho" src="./assets/.png"/>
+              <div class="frame-40-JVB">
+                <p class="lorem-ipsum-dolor-sit-amet-consectetur-mauris-aliquam-urna-diam-volutpat-sed-tortor-suspendisse-pretium-in-hendrerit-tellus-morbi-aenean-diam-magna-a-ornare-integer-sit-eu-quis-enim-mauris-consequat-sit-augue-eu-morbi-curabitur-amet-morbi-magna-integer-feugiat-morbi-nunc-tincidunt-sem-orci-nunc-scelerisque-interdum-ullamcorper-lacus-enim-in-tempus-scelerisque-arcu-nunc-a-dignissim-aliquet-pretium-egestas-dui-vel-quis-nunc-etiam-viverra-et-vitae-in-aliquet-nullam-vulputate-id-dui-tortor-volutpat-eu-tristique-neque-bibendum-amet-dictum-convallis-gravida-pellentesque-nisi-sit-volutpat-in-vitae-fusce-in-morbi-consequat-sit-pellentesque-morbi-sed-egestas-enim-consectetur-eJ9">
+                Lorem ipsum dolor sit amet consectetur. Mauris aliquam urna diam volutpat sed. Tortor suspendisse pretium in hendrerit tellus. Morbi aenean diam magna a ornare integer sit eu. Quis enim mauris consequat sit augue. Eu morbi curabitur amet morbi magna integer feugiat morbi nunc. Tincidunt sem orci nunc scelerisque. Interdum ullamcorper lacus enim
+                <br/>
+                
+                <br/>
+                In tempus scelerisque arcu nunc a. Dignissim aliquet pretium egestas dui vel quis nunc etiam viverra. Et vitae in aliquet nullam vulputate id dui tortor volutpat. Eu tristique neque bibendum amet dictum convallis gravida pellentesque. Nisi sit volutpat in vitae fusce in morbi consequat. Sit pellentesque morbi sed egestas enim consectetur.
+                </p>
+                <p class="lucas-d-ceo-of-ganians-fMf">Lucas D -Ceo OF Ganians</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
