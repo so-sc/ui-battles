@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+  color: white;
+  width:100%;
+  background-color: rgb(8, 8, 8);
+  height:95vh;
+  border-radius: 0px 0px 75px 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+nav a{
+  padding:10px;
+}
+.nav{
+  padding-left:100px;
+ display: flex;
+justify-content: space-between;
+   padding: 25px 50px 10px;
+}
+
+.text{
+  font-size:130px;
+  padding-left:100px;
+}
+
+.hero{
+  padding-top:60px;
+}
+
+.button {
+  padding-left:100px;
+  display: flex;
+justify-content: space-between;
+  width:53%;
+}
+
+button{
+  font-size:40px;
+  color:white;
+  border-radius:50px;
+  background-color: #bf00ff;
+}
+button span{
+  padding-left:5px;
+  padding-right:10px;
+}
+.whs{
+  font-size:40px;
+}
+
+.h-info{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.h-text{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.h-info img{
+  width:500px;
+  margin-left:100px;
+}
+.h-side img {
+  height: 100px;
+  width: 100px;
+  margin-top: 150px;
+  padding-left: 200px;
+}
+
+body-heading{
+  text-align: center;
+}
+
+.homess h1{
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 20px;
+  padding-top: 50px;
+  padding-right:100px;
+}
+
+.image img{
+  height: 500px;
+  width: 500px;
+  padding-left:900px ;
+}
+
+.headingss h1{
+  padding-left: 12px;
+}
+.headingss p{
+  padding-left: ;
+}
