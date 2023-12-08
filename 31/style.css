@@ -1,0 +1,100 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    color: white;
+    font-family: Manrope;
+    padding: 0 90px;
+}
+
+.navbar{
+    /* background: black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar-logo{
+}
+
+.navbar-items{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-items > a{
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+}
+
+.make_follower{
+    font-size: 110px;
+    font-weight: 700;
+}
+
+.make_follower >p{
+    margin-bottom: 30px;
+}
+
+.engagement{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 47px;
+}
+
+.engagement-label{
+    background: linear-gradient(to right,#3645db,#9b53c1);
+    /* height: 30px; */
+    padding: 0 50px;
+    border-radius: 50px;
+}
+
+.engagement-sm{
+    padding-left: 30px;
+}
+
+.chessbox{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    margin: 40px 0px;
+}
+
+.chess{
+    color: black;
+
+}
+
+.chesstext{
+    width: 400px;
+
+}
+
+.white{
+    display: flex;
+    background: white;
+    height: 500px;
+    border-radius: 100px;
+}
+
+.bestsol{
+color: black;
+padding-left: 50px;
+padding-top: 90px;
+font-weight: 900;
+font-size: 30px;
+}
+
+.bestsol_about{
+    color: #9b53c1;
+}
