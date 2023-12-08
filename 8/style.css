@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+    color: white;
+}
+.nav{
+    justify-content: space-between;
+}
+.engag{
+    margin-left:  -120px;
+}
+
+.rect img{
+    position: relative;
+    top: 45px;
+    border-radius: 50px;
+}
+
+.s2 .rect{
+    margin:0 200px ;
+}
+
+.whit{
+    padding: 22px 5em;
+}
+
+.whit h1{
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    
+}
+
+.h1{
+    color: violet;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.h{
+    justify-content: space-between;
+}
+
+.left p{
+    color: black;
+    width: 50%;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.r{
+    align-items: center;
+
+}
+.r img{
+    margin-right: 100px;
+    border-radius: 50px;
+    
+}
+
+.last{
+    background-color: white;
+    color: black;
+}
+
+.sp{
+    justify-content: space-between;
+    padding: 4em 4em;
+}
+
+.sp li{
+    font-size: 30px;
+}
+.bold{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.whit h1,h2{
+    margin-top: 7em ;
+
+}
