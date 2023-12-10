@@ -28,10 +28,8 @@ A thrilling web-based challenge that will put your design and coding skills to t
 
 ### You have completed your submissions! Results will be revealed soon! Stay Tuned!!
 
-## Contributors
+## NOTE
 
-<a href="https://github.com/so-sc/ui-battles/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=so-sc/ui-battles" />
-</a>
+Some of the submissions are not shown here, we have seen your individual forks and gone through for the evaluation.
 
-#### Thank you for your contributions! 🚀
+#### Thank you for participation! 🚀
